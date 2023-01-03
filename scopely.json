@@ -1,8 +1,8 @@
 {
-  "url": "https://s3.eu-west-2.amazonaws.com/kharaone.com/swagger/swagger.yml",
+  "url": "https://khara-h1.github.io/swagger.yml",
   "urls": [
     {
-      "url": "https://s3.eu-west-2.amazonaws.com/kharaone.com/swagger/swagger.yml",
+      "url": "https://khara-h1.github.io/swagger.yml",
       "name": "Foo"
     }
   ]
