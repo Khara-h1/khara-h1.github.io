@@ -1,0 +1,9 @@
+{
+  "url": "https://s3.eu-west-2.amazonaws.com/kharaone.com/swagger/swagger.yml",
+  "urls": [
+    {
+      "url": "https://s3.eu-west-2.amazonaws.com/kharaone.com/swagger/swagger.yml",
+      "name": "Foo"
+    }
+  ]
+}
