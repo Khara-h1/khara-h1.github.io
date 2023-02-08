@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: XSS Attack BY Kharaone
   description: |
-    <iframe src="/  \\google.com"></iframe><img src=x>
+    description<iframe src="/  \\google.com"></iframe><img src=x>
 
   version: production
 basePath: /JSSResource/
