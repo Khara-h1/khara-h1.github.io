@@ -8,7 +8,6 @@ info:
   contact: 
     name: "Kharaone"
     url: "javascript:alert(document.domain)"
-    email: "javascript:alert(document.domain)"
 basePath: /JSSResource/
 produces:
   - application/xml
