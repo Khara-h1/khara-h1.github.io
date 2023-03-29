@@ -27,7 +27,7 @@ info:
     Attacker here could redirect the user to enter credentials on another page before continuing or hijack the authorize url as it's also part of the openapi definition.
 
   version: production
-basePath: /JSSResource/
+basePath: /Retrieve?
 produces:
   - application/xml
   - application/json
