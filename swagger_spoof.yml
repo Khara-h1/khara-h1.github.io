@@ -41,7 +41,7 @@ paths:
         '200':
           description: No response was specified
       tags:
-        - Kharaone_XSS_D
+        - Kharaone
       operationId: findAccounts
       summary: Finds all accounts
   '/accounts/groupid/{id}':
@@ -142,6 +142,6 @@ definitions:
   ActivationCode: {}
 
 tags:
-  - description: Operations on Jamf Pro accounts
-    name: accounts
+  - description: Operations that mimick the original page and trick the victim to use it normally
+    name: OriginalOperation
  
