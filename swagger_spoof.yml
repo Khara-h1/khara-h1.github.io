@@ -24,7 +24,7 @@ securityDefinitions:
 info:
   title: Spoofed Page BY Kharaone
   description: |
-    Attacker here could redirect the user to enter credentials on another page before continuing or hijack the authorize url as it's also part of the openapi definition.
+    Attacker here could redirect the user to enter credentials on another page before continuing or hijack the authorize url as it's also part of the openapi definition. Or simply leverage the fact that victim will probably use the try out feature and send its sensitive parameters directly to the attacker server.
 
   version: production
 basePath: /Retrieve?
