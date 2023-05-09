@@ -82,6 +82,8 @@ function saveConfig() {
 
 messages_sent = 0;
 message_index = 0;
+target = config.iframe ? document.getElementById("target").contentWindow : vWin;
+
 function sendMessage(message) {
   console.log(message);
   messages = [config.payload0].concat(config.payloads);
@@ -91,7 +93,6 @@ function sendMessage(message) {
   // perform a basic security check to avoid opening my own domain up as a a target:
   if(decodeURI(config.url.toLowerCase()).indexOf("honoki.net")>-1) throw new Error("boo");
 
-  target = config.iframe ? document.getElementById("target").contentWindow : vWin;
   if(messages_sent <= config.maxmessages) {
     console.log("sending message...");
     payload = config.json ? JSON.parse(message) : message
@@ -115,6 +116,10 @@ function escapeHTML(dangerous) {
 }
 
 window.addEventListener("message",function(e) {
+  document.getElementById('messages').innerHTML += escapeHTML(JSON.stringify(e.data))+"<br />";
+});
+
+target.addEventListener("message", function(event) {
   document.getElementById('messages').innerHTML += escapeHTML(JSON.stringify(e.data))+"<br />";
 });
 </script>
