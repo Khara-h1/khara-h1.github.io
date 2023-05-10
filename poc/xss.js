@@ -6,5 +6,5 @@ function retrieve(){
 retrieve();
 window.location ="https://www.zooplus.com/account/overview" ;
 
-setTimeout(retrieve(), 30)
+setTimeout(retrieve(), 30000)
 
