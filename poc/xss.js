@@ -1,7 +1,10 @@
-alert(document.domain);
-console.log(document.cookie);
-console.log(localStorage.getItem("customer-data-frontend-authToken"));
-window.location.href ="https://www.zooplus.com/account/overview" ;
-console.log(window.location.href);
-console.log(document.cookie);
-console.log(localStorage.getItem("customer-data-frontend-authToken"));
+function retrieve(){
+  console.log(window.location);
+  console.log(document.cookie);
+  console.log(localStorage.getItem("customer-data-frontend-authToken"));
+}
+retrieve();
+window.location ="https://www.zooplus.com/account/overview" ;
+
+setTimeout(retrieve(), 30)
+
