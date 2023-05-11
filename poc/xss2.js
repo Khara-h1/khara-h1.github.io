@@ -2,7 +2,11 @@ var a=document.createElement("iframe");
 a.src="https://www.zooplus.com/account/overview";
 a.name="mainsite";
 document.body.appendChild(a);
-function onmessagehandler(){
-  mainsite.window.addEventListener("message",console.log)
+function messageHandler(e){
+  console.log(e);
 }
-setInterval(onmessagehandler, 1000);
+
+function hookMessageHandler(){
+  mainsite.window.addEventListener("message",messageHandler)
+}
+setInterval(hookMessageHandler, 1000);
