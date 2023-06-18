@@ -21,7 +21,8 @@
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'text/plain' },
-            body: JSON.stringify(payload)
+            body: JSON.stringify(payload),
+            mode:"no-cors"
         };
         fetch('https://www.zooplus.fr/checkout/register/createCustomerAccount', requestOptions)
         .then(response => response.json())
