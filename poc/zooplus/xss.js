@@ -3,7 +3,7 @@ var a=document.createElement("iframe");
 a.src="https://www.bitiba.de/checkout/logout.htm";
 a.name="mainsite";
 a.width="100%";
-a.height="100%";
+a.height="700px";
 document.body.innerHTML="";
 document.body.appendChild(a);
 function formHandler(e){
