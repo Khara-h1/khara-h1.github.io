@@ -55,6 +55,7 @@ console.log(config);
   }
   url = new URL(config.url);
   document.getElementById("url").textContent = url.hostname;
+  target = config.iframe ? document.getElementById("target").contentWindow : vWin;
  } catch(e) {
   console.log(e);
  }
