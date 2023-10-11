@@ -1,1 +1,71 @@
+<html>
 
+<head>
+
+</head>
+
+<body onload="initSSO()">
+    <base src="file:///E:/kali/BugBounties/Hackerone/Private/zooplus/ctf/" />
+    <iframe id="loginFrame" width="500px" height="500px"></iframe>
+    <textarea id="postMessage" rows="10" cols="100">
+        {
+            "type": "LOGIN_SUCCESS",
+            "path": "https://google.com",
+            "message": "LOL"
+        }
+    </textarea>
+    <button onclick="submitPostMessage()">PostMessage</button>
+    <script>
+        const URL_REGEX =
+            /^(((https?):\/\/)(%{2}|[-()_.!~*';/?:@&=+$, A-Za-z0-9])+)([).!';/?:, ][[:blank:]])?$/i;
+        const PATH_REGEX = /^\/(.)*$/i;
+
+        const loadSSOIframe = () => {
+            const loginFrame = document.getElementById("loginFrame");
+            loginFrame.onload = function () {
+                loginFrame.contentWindow.postMessage('ACK', '*');
+            };
+            loginFrame.src = 'login.html';
+        };
+
+        const postMessageEventListener = (event) => {
+            switch (event.data.type) {
+                case 'CHALLENGE_PAGE':
+                    if (window.location.href.includes('logout')) {
+                        window.location.href = 'logout.html';
+                    }
+                    break;
+                case 'LOGIN_SUCCESS':
+                    if (URL_REGEX.test(event.data.path) || PATH_REGEX.test(event.data.path)) {
+                        window.location.href = event.data.path;
+                        console.log("YAY");
+                    } else {
+                        window.location.href = 'preview.html';
+                    }
+                    break;
+                case 'ALREADY_AUTHENTICATED':
+                    window.location.reload();
+                    break;
+                default:
+                    if (event.origin.includes('login') && event.data.type) {
+                        console.log('Checkout. Unknown Keycloak event type');
+                    }
+                    break;
+            }
+        };
+
+        const initSSO = (data = {}) => {
+            loadSSOIframe();
+            window.addEventListener('message', postMessageEventListener, false);
+        };
+
+        const submitPostMessage=()=> {
+            let msg = document.getElementById("postMessage");
+            console.log(msg.innerHTML);
+            msg=JSON.parse(msg.innerHTML);
+            window.postMessage(msg, '*');
+        }
+    </script>
+</body>
+
+</html>
