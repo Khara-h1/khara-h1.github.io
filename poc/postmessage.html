@@ -112,6 +112,11 @@ function openWindow() {
   setInterval(function() { sendMessage() }, 1000);
 }
 
+function clearMessages() {
+  document.getElementById('messages').innerHTML = "";
+  messages_sent = 0;
+}
+
 function escapeHTML(dangerous) {
   var text = document.createTextNode(dangerous);
   var p = document.createElement('p'); 
@@ -120,7 +125,10 @@ function escapeHTML(dangerous) {
 }
 
 window.addEventListener("message",function(e) {
-  document.getElementById('messages').innerHTML += escapeHTML(JSON.stringify(e.data))+"<br />";
+  if (!JSON.stringify(e.data).includes("wappalyze")){
+    document.getElementById('messages').innerHTML += escapeHTML(JSON.stringify(e.data))+"<br />";
+  }
+  
 });
 
 </script>
@@ -156,7 +164,7 @@ Max messages: <input type="text" placeholder='10' name="maxmessages" /><br />
 </form>
 </pre>
 <hr />
-<p>Any <code>postMessage</code> data sent back to this page will be printed below:</p>
+<p>Any <code>postMessage</code> data sent back to this page will be printed below: <button id="clear" class="btn btn-light" onclick="clearMessages();return false;">Clear</button></p>
 <div class="alert alert-info" id="messages"></div>
 <div id="poc"></div>
 <hr />
