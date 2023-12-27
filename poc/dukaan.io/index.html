@@ -1,67 +1,1545 @@
-<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
-  <link rel="preload" href="https://web.mydukaan.io/src/fonts/GalanoGrotesque/galanogrotesque-regular.woff2" as="font" type="font/woff2"
-    crossorigin />
-  <link rel="preload" href="https://web.mydukaan.io/src/fonts/GalanoGrotesque/galanogrotesque-medium.woff2" as="font" type="font/woff2"
-    crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://rsms.me/" />
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-    media="print" onload='this.media="all"' />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
-    media="print" onload='this.media="all"' />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://accounts.google.com" rel="preconnect" />
-  <link href="https://connect.facebook.net" rel="preconnect" />
-  <link href="https://www.google-analytics.com" rel="preconnect" />
-  <link href="https://www.googletagmanager.com" rel="preconnect" />
-  <link href="https://cdn.linkmink.com" rel="preconnect" />
-  <link href="https://checkout.razorpay.com" rel="preconnect" />
-  <link href="https://snap.licdn.com" rel="preconnect" />
-  <link href="https://public.profitwell.com" rel="preconnect" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://cdnjs.cloudflare.com" rel="preconnect">
+  <link rel="preload" href="/src/fonts/GalanoGrotesque/galanogrotesque-regular.woff2" as="font" type="font/woff2"
+    crossorigin="">
+  <link rel="preload" href="/src/fonts/GalanoGrotesque/galanogrotesque-medium.woff2" as="font" type="font/woff2"
+    crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" media="all"
+    onload="this.media=&quot;all&quot;">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&amp;display=swap" media="all"
+    onload="this.media=&quot;all&quot;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://accounts.google.com" rel="preconnect">
+  <link href="https://connect.facebook.net" rel="preconnect">
+  <link href="https://www.google-analytics.com" rel="preconnect">
+  <link href="https://www.googletagmanager.com" rel="preconnect">
+  <link href="https://cdn.linkmink.com" rel="preconnect">
+  <link href="https://checkout.razorpay.com" rel="preconnect">
+  <link href="https://snap.licdn.com" rel="preconnect">
+  <link href="https://public.profitwell.com" rel="preconnect">
   <meta name="description"
-    content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan." />
-  <meta property="og:url" content="https://web.mydukaan.io/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Dukaan Web - Log Into Your Dukaan Web Dashboard" />
+    content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan.">
+  <meta property="og:url" content="https://web.mydukaan.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dukaan Web - Log Into Your Dukaan Web Dashboard">
   <meta property="og:description"
-    content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan." />
-  <meta property="og:image" content="https://web.mydukaan.io/images/og_image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="web.mydukaan.io" />
-  <meta property="twitter:url" content="https://web.mydukaan.io/" />
-  <meta name="twitter:title" content="Dukaan Web - Log Into Your Dukaan Web Dashboard" />
+    content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan.">
+  <meta property="og:image" content="/images/og_image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="web.mydukaan.io">
+  <meta property="twitter:url" content="https://web.mydukaan.io/">
+  <meta name="twitter:title" content="Dukaan Web - Log Into Your Dukaan Web Dashboard">
   <meta name="twitter:description"
-    content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan." />
-  <meta name="twitter:image" content="https://web.mydukaan.io/images/og_image.jpg" />
-  <script async src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script src="https://accounts.google.com/gsi/client" async defer="defer"></script>
+    content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan.">
+  <meta name="twitter:image" content="/images/og_image.jpg">
+  <script src="https://connect.facebook.net/en_US/sdk.js?hash=7add60c03a05cf5a86bee451d1ce98f8" async=""
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" async=""
+    src="https://www.gstatic.com/recaptcha/releases/u-xcq3POCWFlCr3x8_IPxgPu/recaptcha__fr.js" crossorigin="anonymous"
+    integrity="sha384-w7moQwwm+YlLwY9/t5Bc0G2SyFbgL3T8X2540Nh41TYeskTkUEapKJeT2j2eNRc3"></script>
+  <script type="text/javascript" async=""
+    src="https://www.googletagmanager.com/gtag/js?id=G-EQXVJVLYWW&amp;l=dataLayer&amp;cx=c"></script>
+  <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script async="" src="https://zeda-widget.s3.ap-south-1.amazonaws.com/dist/widget.bundle.js"></script>
+  <script
+    src="https://connect.facebook.net/signals/config/579678803203551?v=2.9.138&amp;r=stable&amp;domain=web.mydukaan.io"
+    async=""></script>
+  <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+  <script async="" src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async="" defer="defer"></script>
   <script>!function (e, t, n, a, c, o, f) { e.fbq || (c = e.fbq = function () { c.callMethod ? c.callMethod.apply(c, arguments) : c.queue.push(arguments) }, e._fbq || (e._fbq = c), c.push = c, c.loaded = !0, c.version = "2.0", c.queue = [], (o = t.createElement(n)).async = !0, o.src = "https://connect.facebook.net/en_US/fbevents.js", (f = t.head.getElementsByTagName(n)[0]).parentNode.insertBefore(o, f)) }(window, document, "script"), fbq("init", "579678803203551"), fbq("track", "PageView")</script>
   <script>!function (e) { var t, a, n, s, d, o; t = window, a = document, n = "script", t[s = "zeda"] = {}, t[s]._key = "C4VESRS-H8CMBM6-JPJKBS5-V81BKSW", (d = a.createElement(n)).async = !0, d.src = "https://zeda-widget.s3.ap-south-1.amazonaws.com/dist/widget.bundle.js", (o = a.getElementsByTagName(n)[0]).parentNode.insertBefore(d, o) }()</script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=579678803203551&ev=PageView&noscript=1" loading="lazy" /></noscript>
-  <script defer="defer" src="https://web.mydukaan.io/static/js/main.cd774286.js"></script>
-  <link href="https://web.mydukaan.io/static/css/main.f58b035b.css" rel="stylesheet">
+  <script defer="defer" src="/static/js/main.cd774286.js"></script>
+  <link href="/static/css/main.f58b035b.css" rel="stylesheet">
+  <style id="googleidentityservice_button_styles">
+    .qJTHM {
+      -moz-user-select: none;
+      color: #202124;
+      direction: ltr;
+      font-family: "Roboto-Regular", arial, sans-serif;
+      font-weight: 400;
+      margin: 0;
+      overflow: hidden
+    }
+
+    .ynRLnc {
+      left: -9999px;
+      position: absolute;
+      top: -9999px
+    }
+
+    .L6cTce {
+      display: none
+    }
+
+    .bltWBb {
+      word-break: break-all
+    }
+
+    .hSRGPd {
+      color: #1a73e8;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: none
+    }
+
+    .Bz112c-W3lGp {
+      height: 16px;
+      width: 16px
+    }
+
+    .Bz112c-E3DyYd {
+      height: 20px;
+      width: 20px
+    }
+
+    .Bz112c-r9oPif {
+      height: 24px;
+      width: 24px
+    }
+
+    .Bz112c-uaxL4e {
+      -moz-border-radius: 10px;
+      border-radius: 10px
+    }
+
+    .LgbsSe-Bz112c {
+      display: block
+    }
+
+    .S9gUrf-YoZ4jf,
+    .S9gUrf-YoZ4jf * {
+      border: none;
+      margin: 0;
+      padding: 0
+    }
+
+    .fFW7wc-ibnC6b>.aZ2wEe>div {
+      border-color: #4285f4
+    }
+
+    .P1ekSe-ZMv3u>div:nth-child(1) {
+      background-color: #1a73e8 !important
+    }
+
+    .P1ekSe-ZMv3u>div:nth-child(2),
+    .P1ekSe-ZMv3u>div:nth-child(3) {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), linear-gradient(to right, #1a73e8, #1a73e8) !important
+    }
+
+    .haAclf {
+      display: inline-block
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe {
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: background-color .218s, border-color .218s;
+      -moz-user-select: none;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #dadce0;
+      color: #3c4043;
+      cursor: pointer;
+      font-family: "Google Sans", arial, sans-serif;
+      font-size: 14px;
+      height: 40px;
+      letter-spacing: 0.25px;
+      outline: none;
+      overflow: hidden;
+      padding: 0 12px;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: auto
+    }
+
+    @media screen and (-ms-high-contrast:active) {
+      .nsm7Bb-HzV7m-LgbsSe {
+        border: 2px solid windowText;
+        color: windowText
+      }
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe {
+      font-size: 14px;
+      height: 32px;
+      letter-spacing: 0.25px;
+      padding: 0 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe {
+      font-size: 11px;
+      height: 20px;
+      letter-spacing: 0.3px;
+      padding: 0 8px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe {
+      padding: 0;
+      width: 40px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe {
+      width: 32px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe {
+      width: 20px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK {
+      border-radius: 20px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe {
+      border-radius: 16px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe {
+      border-radius: 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc {
+      border: none;
+      color: #fff
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc {
+      background-color: #1a73e8
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc {
+      background-color: #202124;
+      color: #e8eaed
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      height: 18px;
+      margin-right: 8px;
+      min-width: 18px;
+      width: 18px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      height: 14px;
+      min-width: 14px;
+      width: 14px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      height: 10px;
+      min-width: 10px;
+      width: 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      margin-left: 8px;
+      margin-right: -4px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      margin: 0;
+      padding: 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      padding: 8px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      padding: 4px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      height: 36px;
+      margin-left: -10px;
+      margin-right: 12px;
+      min-width: 36px;
+      width: 36px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+      margin: 0;
+      padding: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      height: 28px;
+      margin-left: -8px;
+      margin-right: 10px;
+      min-width: 28px;
+      width: 28px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      height: 16px;
+      margin-left: -6px;
+      margin-right: 8px;
+      min-width: 16px;
+      width: 16px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-radius: 3px;
+      margin-left: 2px;
+      margin-right: 0;
+      padding: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-radius: 18px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-radius: 14px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-radius: 8px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      height: 100%;
+      position: relative;
+      width: 100%
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX {
+      justify-content: center
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+      flex-grow: 1;
+      font-family: "Google Sans", arial, sans-serif;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: top
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+      font-weight: 300
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+      flex-grow: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+      transition: background-color .218s;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe:hover,
+    .nsm7Bb-HzV7m-LgbsSe:focus {
+      box-shadow: none;
+      border-color: #d2e3fc;
+      outline: none
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,
+    .nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+      background: rgba(66, 133, 244, .04)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+      background: rgba(66, 133, 244, .1)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+      background: rgba(255, 255, 255, .24)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+      background: rgba(255, 255, 255, .32)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY {
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      height: 20px;
+      margin-left: -4px;
+      margin-right: 8px;
+      min-width: 20px;
+      width: 20px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+      font-family: "Roboto";
+      font-size: 12px;
+      text-align: left
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS {
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      color: #5f6368;
+      fill: #5f6368;
+      font-size: 11px;
+      font-weight: 400
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff {
+      color: #e8eaed;
+      fill: #e8eaed
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c {
+      height: 18px;
+      margin: -3px -3px -3px 2px;
+      min-width: 18px;
+      width: 18px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      margin-left: 12px;
+      margin-right: -10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+      border-radius: 18px
+    }
+
+    .L5Fo6c-sM5MNb {
+      border: 0;
+      display: block;
+      left: 0;
+      position: relative;
+      top: 0
+    }
+
+    .L5Fo6c-bF1uUb {
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .L5Fo6c-bF1uUb:focus {
+      border: none;
+      outline: none
+    }
+
+    sentinel {}
+  </style>
+  <style data-emotion="css" data-s=""></style>
+  <meta http-equiv="origin-trial"
+    content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <style type="text/css">
+    .fadein {
+      animation-name: fadein;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <style type="text/css">
+    :root {
+      --default-bg-color: #f6f7f8;
+      --default-bg-moving-gradient: linear-gradient(to right, rgb(238, 238, 238) 8%, rgb(222, 222, 222) 18%, rgb(238, 238, 238) 33%);
+    }
+
+    .shimmer {
+      background: var(--default-bg-color);
+      background-image: var(--default-bg-moving-gradient);
+      background-repeat: no-repeat;
+      animation: shimmering forwards infinite ease-in-out, fadein 0.02s forwards;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes shimmering {
+      from {
+        background-position: top right;
+      }
+
+      to {
+        background-position: top left;
+      }
+    }
+  </style>
+  <style type="text/css">
+    :root {
+      --default-bg-color: #e1e2e4;
+    }
+
+    .breathing {
+      width: 100%;
+      height: 100%;
+      background: var(--default-bg-color);
+      animation: breathing ease-in-out infinite alternate;
+    }
+
+    @keyframes breathing {
+      from {
+        opacity: 0.25;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <style data-jss="" data-meta="MuiCollapse">
+    .MuiCollapse-root {
+      height: 0;
+      overflow: hidden;
+      transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+
+    .MuiCollapse-entered {
+      height: auto;
+      overflow: visible;
+    }
+
+    .MuiCollapse-hidden {
+      visibility: hidden;
+    }
+
+    .MuiCollapse-wrapper {
+      display: flex;
+    }
+
+    .MuiCollapse-wrapperInner {
+      width: 100%;
+    }
+  </style>
+  <style data-jss="" data-meta="MuiDialog">
+    @media print {
+      .MuiDialog-root {
+        position: absolute !important;
+      }
+    }
+
+    .MuiDialog-scrollPaper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .MuiDialog-scrollBody {
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .MuiDialog-scrollBody:after {
+      width: 0;
+      height: 100%;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .MuiDialog-container {
+      height: 100%;
+      outline: 0;
+    }
+
+    @media print {
+      .MuiDialog-container {
+        height: auto;
+      }
+    }
+
+    .MuiDialog-paper {
+      margin: 32px;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    @media print {
+      .MuiDialog-paper {
+        box-shadow: none;
+        overflow-y: visible;
+      }
+    }
+
+    .MuiDialog-paperScrollPaper {
+      display: flex;
+      max-height: calc(100% - 64px);
+      flex-direction: column;
+    }
+
+    .MuiDialog-paperScrollBody {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .MuiDialog-paperWidthFalse {
+      max-width: calc(100% - 64px);
+    }
+
+    .MuiDialog-paperWidthXs {
+      max-width: 444px;
+    }
+
+    @media (max-width:507.95px) {
+      .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthSm {
+      max-width: 600px;
+    }
+
+    @media (max-width:663.95px) {
+      .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthMd {
+      max-width: 960px;
+    }
+
+    @media (max-width:1023.95px) {
+      .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthLg {
+      max-width: 1280px;
+    }
+
+    @media (max-width:1343.95px) {
+      .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthXl {
+      max-width: 1920px;
+    }
+
+    @media (max-width:1983.95px) {
+      .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperFullWidth {
+      width: calc(100% - 64px);
+    }
+
+    .MuiDialog-paperFullScreen {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      max-width: 100%;
+      max-height: none;
+      border-radius: 0;
+    }
+
+    .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+      margin: 0;
+      max-width: 100%;
+    }
+  </style>
+  <style data-jss="" data-meta="makeStyles">
+    .jss1817 {
+      margin-top: 24px !important;
+    }
+  </style>
+  <link rel="icon"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAADq0lEQVRogeWaP0gbURzHvw12cDHQEhS0VaHtUKt1KFYqRe2mGdROlg7JUGiXkE5OQh3qksnDRaGDUlqcmmSIdjOh9C+0tNo6iGCsCkpQiEuGFiy/67vLJbk/796dMcEPBC7JvXvf33u/93vv/d6dOz4+hlN84UQfAOXTAqDZ4JFbANIAkvTJSP6k07qFDWCigwCGAXgF688CiAGYEzXGtgFM+ASAXpEKTUjRc+0awm2AL5wg15gCMOSu7hLiAJ5mJH+a52YuA3zhBLnJnANXsQu5VjAj+WNW5Twc4qnVo2UUD1ZXlNVtimkP+MIJavVAuVQbMJ+R/EGjPw17oELEEwGmRRddA1jXVYJ4hYCRO5W4EBuw0TKKs8NI8cAuMICFyu9lHrB2oOjUqQ2xNUWFp6zE32isw+O+Vly+UOuqst+HOUSW1rF9mDO7zcs0Dis/qD3AZthls9I9Vy4iFup2T3URR7m/GJr+iJ+7R1a39isztnYQT1iVmrx/3T21OtTV1mBs4BrPrapW2QDW+pZrm7bGOlcF60G9zEEv06z2gOFEUW6oFzgJag0YFtH5a/cIgRdfEXr9w3bZDxsHcjnye0FkzTWsK4TC5kxqE4ure/I1df1oVxNXuYUvOwi9+m+0t/Y8no8IjS0vafewXZQQ2wf5kPd+44D7EbPJTfU6m/sjWj3hzICeq/kBt7Syz+UOFOe1YbLdWWCQDWgRLT3YXq9eU0tG3q5blhl/s1bwfaC9QbR6osVjsgG3hMKqNuyRa4xH13SLUe/QYFfGDDF6uwmXnM3ozdwxy4jphzfRH3mn+jIZsbiyh8GOBtk4+p1cZuHzToG/k/DJkTan1ZeshWxDQuKhbgxNf1IFkp+TIdrBqoUiz8tHt+zEfEMst5Q8kCstj93lmkXpnm/P7rk2qztvAgb1BC30aIKaTablsKr0CLX4QEc9HnQ14Q7fUoEb1wxQIIFuizTDw9J91cqWh+Uqq5W0hyVaq5Vk9RvAtmbZChBjlyxpV+YByxxkBSJrVgwwzHyVGxsbnDnVAOZGKasSS6v7J24O574iJZSVoLyNgy2gJfRsqoMDVWtxZi5mdYBBS4Ynfa1ygstNaMU6k9y0SmwR8YzkL01soUpTiwWrUfZHxaRYdAgWHz2VLKdZ9lc6RZFGSHpHToYnNBV0wAGzUxrDDQ0rMH+isvgQO2JC3ojTdCfJTDzOxDEr8gO7kx1CnzRxFiq51mdn51WDYqr2ZQ89Tu11GwD/AHzmjSvJs8okAAAAAElFTkSuQmCC">
+  <title>Login | Dukaan</title>
+  <link id="googleidentityservice" type="text/css" media="all" rel="stylesheet"
+    href="https://accounts.google.com/gsi/style">
+  <meta http-equiv="origin-trial"
+    content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <style type="text/css"
+    data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
+    .fb_hidden {
+      position: absolute;
+      top: -10000px;
+      z-index: 10001
+    }
+
+    .fb_reposition {
+      overflow: hidden;
+      position: relative
+    }
+
+    .fb_invisible {
+      display: none
+    }
+
+    .fb_reset {
+      background: none;
+      border: 0;
+      border-spacing: 0;
+      color: #000;
+      cursor: auto;
+      direction: ltr;
+      font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
+      text-shadow: none;
+      text-transform: none;
+      visibility: visible;
+      white-space: normal;
+      word-spacing: normal
+    }
+
+    .fb_reset>div {
+      overflow: hidden
+    }
+
+    @keyframes fb_transform {
+      from {
+        opacity: 0;
+        transform: scale(.95)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    .fb_animate {
+      animation: fb_transform .3s forwards
+    }
+
+    .fb_hidden {
+      position: absolute;
+      top: -10000px;
+      z-index: 10001
+    }
+
+    .fb_reposition {
+      overflow: hidden;
+      position: relative
+    }
+
+    .fb_invisible {
+      display: none
+    }
+
+    .fb_reset {
+      background: none;
+      border: 0;
+      border-spacing: 0;
+      color: #000;
+      cursor: auto;
+      direction: ltr;
+      font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
+      text-shadow: none;
+      text-transform: none;
+      visibility: visible;
+      white-space: normal;
+      word-spacing: normal
+    }
+
+    .fb_reset>div {
+      overflow: hidden
+    }
+
+    @keyframes fb_transform {
+      from {
+        opacity: 0;
+        transform: scale(.95)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    .fb_animate {
+      animation: fb_transform .3s forwards
+    }
+
+    .fb_dialog {
+      background: rgba(82, 82, 82, .7);
+      position: absolute;
+      top: -10000px;
+      z-index: 10001
+    }
+
+    .fb_dialog_advanced {
+      border-radius: 8px;
+      padding: 10px
+    }
+
+    .fb_dialog_content {
+      background: #fff;
+      color: #373737
+    }
+
+    .fb_dialog_close_icon {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+      cursor: pointer;
+      display: block;
+      height: 15px;
+      position: absolute;
+      right: 18px;
+      top: 17px;
+      width: 15px
+    }
+
+    .fb_dialog_mobile .fb_dialog_close_icon {
+      left: 5px;
+      right: auto;
+      top: 5px
+    }
+
+    .fb_dialog_padding {
+      background-color: transparent;
+      position: absolute;
+      width: 1px;
+      z-index: -1
+    }
+
+    .fb_dialog_close_icon:hover {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+    }
+
+    .fb_dialog_close_icon:active {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+    }
+
+    .fb_dialog_iframe {
+      line-height: 0
+    }
+
+    .fb_dialog_content .dialog_title {
+      background: #6d84b4;
+      border: 1px solid #365899;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0
+    }
+
+    .fb_dialog_content .dialog_title>span {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+      float: left;
+      padding: 5px 0 7px 26px
+    }
+
+    body.fb_hidden {
+      height: 100%;
+      left: 0;
+      margin: 0;
+      overflow: visible;
+      position: absolute;
+      top: -10000px;
+      transform: none;
+      width: 100%
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading {
+      background: url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+      min-height: 100%;
+      min-width: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 10001
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading.centered {
+      background: none;
+      height: auto;
+      min-height: initial;
+      min-width: initial;
+      width: auto
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+      width: 100%
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+      background: none
+    }
+
+    .loading.centered #fb_dialog_loader_close {
+      clear: both;
+      color: #fff;
+      display: block;
+      font-size: 18px;
+      padding-top: 20px
+    }
+
+    #fb-root #fb_dialog_ipad_overlay {
+      background: rgba(0, 0, 0, .4);
+      bottom: 0;
+      left: 0;
+      min-height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 10000
+    }
+
+    #fb-root #fb_dialog_ipad_overlay.hidden {
+      display: none
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading iframe {
+      visibility: hidden
+    }
+
+    .fb_dialog_mobile .fb_dialog_iframe {
+      position: sticky;
+      top: 0
+    }
+
+    .fb_dialog_content .dialog_header {
+      background: linear-gradient(from(#738aba), to(#2c4987));
+      border-bottom: 1px solid;
+      border-color: #043b87;
+      box-shadow: white 0 1px 1px -1px inset;
+      color: #fff;
+      font: bold 14px Helvetica, sans-serif;
+      text-overflow: ellipsis;
+      text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+      vertical-align: middle;
+      white-space: nowrap
+    }
+
+    .fb_dialog_content .dialog_header table {
+      height: 43px;
+      width: 100%
+    }
+
+    .fb_dialog_content .dialog_header td.header_left {
+      font-size: 12px;
+      padding-left: 5px;
+      vertical-align: middle;
+      width: 60px
+    }
+
+    .fb_dialog_content .dialog_header td.header_right {
+      font-size: 12px;
+      padding-right: 5px;
+      vertical-align: middle;
+      width: 60px
+    }
+
+    .fb_dialog_content .touchable_button {
+      background: linear-gradient(from(#4267B2), to(#2a4887));
+      background-clip: padding-box;
+      border: 1px solid #29487d;
+      border-radius: 3px;
+      display: inline-block;
+      line-height: 18px;
+      margin-top: 3px;
+      max-width: 85px;
+      padding: 4px 12px;
+      position: relative
+    }
+
+    .fb_dialog_content .dialog_header .touchable_button input {
+      background: none;
+      border: none;
+      color: #fff;
+      font: bold 12px Helvetica, sans-serif;
+      margin: 2px -12px;
+      padding: 2px 6px 3px 6px;
+      text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+    }
+
+    .fb_dialog_content .dialog_header .header_center {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 18px;
+      text-align: center;
+      vertical-align: middle
+    }
+
+    .fb_dialog_content .dialog_content {
+      background: url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+      border: 1px solid #4a4a4a;
+      border-bottom: 0;
+      border-top: 0;
+      height: 150px
+    }
+
+    .fb_dialog_content .dialog_footer {
+      background: #f5f6f7;
+      border: 1px solid #4a4a4a;
+      border-top-color: #ccc;
+      height: 40px
+    }
+
+    #fb_dialog_loader_close {
+      float: left
+    }
+
+    .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+      visibility: hidden
+    }
+
+    #fb_dialog_loader_spinner {
+      animation: rotateSpinner 1.2s linear infinite;
+      background-color: transparent;
+      background-image: url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 24px
+    }
+
+    @keyframes rotateSpinner {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    .fb_iframe_widget {
+      display: inline-block;
+      position: relative
+    }
+
+    .fb_iframe_widget span {
+      display: inline-block;
+      position: relative;
+      text-align: justify
+    }
+
+    .fb_iframe_widget iframe {
+      position: absolute
+    }
+
+    .fb_iframe_widget_fluid_desktop,
+    .fb_iframe_widget_fluid_desktop span,
+    .fb_iframe_widget_fluid_desktop iframe {
+      max-width: 100%
+    }
+
+    .fb_iframe_widget_fluid_desktop iframe {
+      min-width: 220px;
+      position: relative
+    }
+
+    .fb_iframe_widget_lift {
+      z-index: 1
+    }
+
+    .fb_iframe_widget_fluid {
+      display: inline
+    }
+
+    .fb_iframe_widget_fluid span {
+      width: 100%
+    }
+
+    .fb_mpn_mobile_landing_page_slide_out {
+      animation-duration: 200ms;
+      animation-name: fb_mpn_landing_page_slide_out;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_landing_page_slide_out_from_left {
+      animation-duration: 200ms;
+      animation-name: fb_mpn_landing_page_slide_out_from_left;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_landing_page_slide_up {
+      animation-duration: 500ms;
+      animation-name: fb_mpn_landing_page_slide_up;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_bounce_in {
+      animation-duration: 300ms;
+      animation-name: fb_mpn_bounce_in;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_bounce_out {
+      animation-duration: 300ms;
+      animation-name: fb_mpn_bounce_out;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_bounce_out_v2 {
+      animation-duration: 300ms;
+      animation-name: fb_mpn_fade_out;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_in_v2 {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_in_v2;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_in_from_left {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_in_from_left;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_out_v2 {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_out_v2;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_out_from_left {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_out_from_left;
+      transition-timing-function: ease-in
+    }
+
+    .fb_invisible_flow {
+      display: inherit;
+      height: 0;
+      overflow-x: hidden;
+      width: 0
+    }
+
+    @keyframes fb_mpn_landing_page_slide_out {
+      0% {
+        margin: 0 12px;
+        width: 100% - 24px
+      }
+
+      60% {
+        border-radius: 18px
+      }
+
+      100% {
+        border-radius: 50%;
+        margin: 0 24px;
+        width: 60px
+      }
+    }
+
+    @keyframes fb_mpn_landing_page_slide_out_from_left {
+      0% {
+        left: 12px;
+        width: 100% - 24px
+      }
+
+      60% {
+        border-radius: 18px
+      }
+
+      100% {
+        border-radius: 50%;
+        left: 12px;
+        width: 60px
+      }
+    }
+
+    @keyframes fb_mpn_landing_page_slide_up {
+      0% {
+        bottom: 0;
+        opacity: 0
+      }
+
+      100% {
+        bottom: 24px;
+        opacity: 1
+      }
+    }
+
+    @keyframes fb_mpn_bounce_in {
+      0% {
+        opacity: .5;
+        top: 100%
+      }
+
+      100% {
+        opacity: 1;
+        top: 0
+      }
+    }
+
+    @keyframes fb_mpn_fade_out {
+      0% {
+        bottom: 30px;
+        opacity: 1
+      }
+
+      100% {
+        bottom: 0;
+        opacity: 0
+      }
+    }
+
+    @keyframes fb_mpn_bounce_out {
+      0% {
+        opacity: 1;
+        top: 0
+      }
+
+      100% {
+        opacity: .5;
+        top: 100%
+      }
+    }
+
+    @keyframes fb_bounce_in_v2 {
+      0% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom right
+      }
+
+      50% {
+        transform: scale(1.03, 1.03);
+        transform-origin: bottom right
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right
+      }
+    }
+
+    @keyframes fb_bounce_in_from_left {
+      0% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom left
+      }
+
+      50% {
+        transform: scale(1.03, 1.03);
+        transform-origin: bottom left
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom left
+      }
+    }
+
+    @keyframes fb_bounce_out_v2 {
+      0% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom right
+      }
+    }
+
+    @keyframes fb_bounce_out_from_left {
+      0% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom left
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom left
+      }
+    }
+
+    @keyframes slideInFromBottom {
+      0% {
+        opacity: .1;
+        transform: translateY(100%)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes slideInFromBottomDelay {
+      0% {
+        opacity: 0;
+        transform: translateY(100%)
+      }
+
+      97% {
+        opacity: 0;
+        transform: translateY(100%)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root" class="content-wrap"></div>
-  <script defer="defer" src="https://web.mydukaan.io/js/ntc.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTSF2067F5"></script>
+  <div id="root" class="content-wrap">
+    <div class="auth-layout full-h flex-column"><svg width="166" height="418" viewBox="0 0 166 418" fill="none"
+        xmlns="http://www.w3.org/2000/svg" class="auth-left-background">
+        <rect width="138.079" height="138.079" rx="20"
+          transform="matrix(0.706265 0.707947 0.706265 -0.707947 -97.8672 320.248)" fill="#115E99"></rect>
+        <rect width="233.133" height="233.133" rx="20" transform="matrix(0.708 0.706213 0.708 -0.706213 -165 164.641)"
+          fill="#1367A8"></rect>
+      </svg><svg width="166" height="418" viewBox="0 0 166 418" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="auth-right-background">
+        <rect width="138.079" height="138.079" rx="20"
+          transform="matrix(0.706265 0.707947 0.706265 -0.707947 -97.8672 320.248)" fill="#115E99"></rect>
+        <rect width="233.133" height="233.133" rx="20" transform="matrix(0.708 0.706213 0.708 -0.706213 -165 164.641)"
+          fill="#1367A8"></rect>
+      </svg>
+      <div class="auth-wrap card animate__animated animate__zoomIn">
+        <form>
+          <div class="auth-logo-wrap"><a href="/" class="logo"><img src="/images/logo.svg" alt="dukaan"></a></div>
+          <div class="MuiCollapse-root MuiCollapse-hidden" style="min-height: 0px;">
+            <div class="MuiCollapse-wrapper">
+              <div class="MuiCollapse-wrapperInner"></div>
+            </div>
+          </div>
+          <div class="MuiCollapse-root MuiCollapse-hidden" style="min-height: 0px;">
+            <div class="MuiCollapse-wrapper">
+              <div class="MuiCollapse-wrapperInner">
+                <div class="success-alert mb16"></div>
+              </div>
+            </div>
+          </div>
+          <div class="MuiCollapse-root MuiCollapse-hidden" style="min-height: 0px;">
+            <div class="MuiCollapse-wrapper">
+              <div class="MuiCollapse-wrapperInner"></div>
+            </div>
+          </div>
+          <div class="MuiCollapse-root MuiCollapse-entered" style="min-height: 0px;">
+            <div class="MuiCollapse-wrapper">
+              <div class="MuiCollapse-wrapperInner">
+                <h4 class="section-text-1 mt8 mb40">Log in</h4>
+                <div class="form-group input-wrap email-phone-input-wrap form-group-lg"><label
+                    class="field-label required">Email address</label>
+                  <div class="input-group-wrap"><input name="email_phone" placeholder="Enter email or mobile number"
+                      type="text" autocomplete="off" value="kharaone@wearehackerone.com" readonly=""></div>
+                </div>
+                <div class="MuiCollapse-root MuiCollapse-entered"
+                  style="min-height: 0px; height: auto; transition-duration: 300ms;">
+                  <div class="MuiCollapse-wrapper">
+                    <div class="MuiCollapse-wrapperInner">
+                      <div class="login-password-field">
+                        <div class="form-group input-wrap input-wrap has-error form-group-lg"><label
+                            class="field-label"><span class="d-flex-c-s"><span>Password</span><span
+                                class="c-purple-1-i c-h-purple-2-i underline-h cur-p">Forgot
+                                password?</span></span></label>
+                          <div class="input-group-wrap"><input name="password" placeholder="Enter your password"
+                              type="password" minlength="8" maxlength="20" autocomplete="off" value=""></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><button class="pos-rel spinner-btn btn-primary-4 full-w press-effect" type="submit"
+                  disabled=""><span class="d-flex-c-c">Log in</span></button>
+                <div class="pos-rel or-separator"><span class="pos-abs absolute-center text-8 c-gray-1 bg-white px12">or
+                    log in with</span></div>
+                <div></div>
+                <div class="login-other-options d-flex"><button class="pos-rel spinner-btn btn-outline-auth"
+                    type="button"><span class="d-flex-c-c"><svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="mr8">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.24077 11C5.24077 10.2855 5.35936 9.60037 5.57128 8.9579L1.86394 6.12695C1.14138 7.59391 0.734375 9.247 0.734375 11C0.734375 12.7515 1.14103 14.4034 1.86239 15.8695L5.56767 13.0331C5.35781 12.3935 5.24077 11.711 5.24077 11Z"
+                          fill="#FBBC05"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.7494 4.50003C13.3016 4.50003 14.7035 5.05003 15.8051 5.94997L19.0095 2.75C17.0569 1.04998 14.5533 0 11.7494 0C7.39611 0 3.65473 2.48944 1.86328 6.127L5.57045 8.95795C6.42467 6.36505 8.85962 4.50003 11.7494 4.50003Z"
+                          fill="#EA4335"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.7494 17.5009C8.8598 17.5009 6.42484 15.6359 5.57063 13.043L1.86328 15.8734C3.65473 19.5115 7.39611 22.0009 11.7494 22.0009C14.4361 22.0009 17.0013 21.0468 18.9265 19.2593L15.4075 16.5389C14.4146 17.1644 13.1642 17.5009 11.7494 17.5009Z"
+                          fill="#34A853"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M22.2648 10.9999C22.2648 10.3499 22.1646 9.64986 22.0144 9H11.75V13.25H17.6584C17.3629 14.699 16.5589 15.813 15.4082 16.5379L18.9272 19.2584C20.9494 17.3815 22.2648 14.5854 22.2648 10.9999Z"
+                          fill="#4285F4"></path>
+                      </svg><span>Google</span></span></button><button class="pos-rel spinner-btn btn-outline-auth"
+                    type="button"><span class="d-flex-c-c"><svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="mr8">
+                        <path
+                          d="M22.5 11.0672C22.5 4.95496 17.5751 0 11.5 0C5.42486 0 0.5 4.95496 0.5 11.0672C0.5 16.5912 4.52256 21.1697 9.78125 22V14.2663H6.98828V11.0672H9.78125V8.62898C9.78125 5.85525 11.4235 4.32313 13.9361 4.32313C15.1396 4.32313 16.3984 4.53929 16.3984 4.53929V7.26287H15.0114C13.6449 7.26287 13.2188 8.11595 13.2188 8.99117V11.0672H16.2695L15.7818 14.2663H13.2188V22C18.4775 21.1697 22.5 16.5912 22.5 11.0672Z"
+                          fill="#1877F2"></path>
+                      </svg><span>Facebook</span></span></button></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="mt32 auth-bottom-text animate__animated animate__fadeInUp"><span class="text-1">Don’t have an account?
+          <span class="text-medium underline cur-p">Get started</span></span></div>
+    </div>
+  </div>
+  <script defer="defer" src="/js/ntc.js"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MTSF2067F5"></script>
   <script
-    async>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-MTSF2067F5")</script>
+    async="">function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-MTSF2067F5")</script>
+  <div class="razorpay-container"
+    style="z-index: 2147483647; position: fixed; top: 0px; display: none; left: 0px; height: 100%; width: 100%; backface-visibility: hidden; overflow-y: visible;">
+    <style>
+      @keyframes rzp-rot {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes rzp-rot {
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      .razorpay-container>iframe {
+        min-height: 100% !important;
+      }
+    </style>
+    <div class="razorpay-backdrop"
+      style="min-height: 100%; transition: all 0.3s ease-out 0s; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;">
+      <span
+        style="text-decoration: none; background: rgb(214, 68, 68); border: 1px dashed white; padding: 3px; opacity: 0; transform: rotate(45deg); transition: opacity 0.3s ease-in 0s; font-family: lato, ubuntu, helvetica, sans-serif; color: white; position: absolute; width: 200px; text-align: center; right: -50px; top: 50px;">Test
+        Mode</span></div><iframe
+      style="opacity: 1; height: 100%; position: relative; background: none; display: block; border: 0 none transparent; margin: 0px; padding: 0px; z-index: 2;"
+      allowtransparency="true" frameborder="0" width="100%" height="100%"
+      src="https://api.razorpay.com/v1/checkout/public?traffic_env=production&amp;build=7b1d9ed15e3a53c45a331a1bee9cf9bba36befbb&amp;modern=1&amp;unified_lite=1"
+      class="razorpay-checkout-frame" allow="otp-credentials"></iframe>
+  </div>
+  <script src="https://accounts.google.com/gsi/client" id="https://accounts.google.com/gsi/client" async=""
+    defer=""></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Le1AaQjAAAAAG7VprkQcNmuuQsqDM93Yu_v7yNk"
+    id="https://www.google.com/recaptcha/api.js?render=6Le1AaQjAAAAAG7VprkQcNmuuQsqDM93Yu_v7yNk" defer=""></script>
+  <script src="https://cdn.paddle.com/paddle/paddle.js" id="https://cdn.paddle.com/paddle/paddle.js" defer=""></script>
+  <div>
+    <div class="grecaptcha-badge" data-style="bottomright"
+      style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+      <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
+          name="a-fq2qjyb6ks1u" frameborder="0" scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+          src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Le1AaQjAAAAAG7VprkQcNmuuQsqDM93Yu_v7yNk&amp;co=aHR0cHM6Ly93ZWIubXlkdWthYW4uaW86NDQz&amp;hl=fr&amp;v=u-xcq3POCWFlCr3x8_IPxgPu&amp;size=invisible&amp;cb=gycv4fpm22tf"></iframe>
+      </div>
+      <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+        class="g-recaptcha-response"
+        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+    </div><iframe style="display: none;"></iframe>
+  </div>
+  <div id="fb-root" class=" fb_reset">
+    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+      <div></div>
+    </div>
+  </div>
 </body>
 
 </html>
