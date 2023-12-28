@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://cdnjs.cloudflare.com" rel="preconnect">
-  <link rel="preload" href="/src/fonts/GalanoGrotesque/galanogrotesque-regular.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="https://web.mydukaan.io/src/fonts/GalanoGrotesque/galanogrotesque-regular.woff2" as="font" type="font/woff2"
     crossorigin="">
-  <link rel="preload" href="/src/fonts/GalanoGrotesque/galanogrotesque-medium.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="https://web.mydukaan.io/src/fonts/GalanoGrotesque/galanogrotesque-medium.woff2" as="font" type="font/woff2"
     crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet">
@@ -39,35 +39,30 @@
   <meta property="og:title" content="Dukaan Web - Log Into Your Dukaan Web Dashboard">
   <meta property="og:description"
     content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan.">
-  <meta property="og:image" content="/images/og_image.jpg">
+  <meta property="og:image" content="https://web.mydukaan.io/images/og_image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="web.mydukaan.io">
   <meta property="twitter:url" content="https://web.mydukaan.io/">
   <meta name="twitter:title" content="Dukaan Web - Log Into Your Dukaan Web Dashboard">
   <meta name="twitter:description"
     content="Log into your Dukaan web dashboard from a laptop or desktop and utilize the full power of selling online by Dukaan.">
-  <meta name="twitter:image" content="/images/og_image.jpg">
+  <meta name="twitter:image" content="https://web.mydukaan.io/images/og_image.jpg">
   <script src="https://connect.facebook.net/en_US/sdk.js?hash=7add60c03a05cf5a86bee451d1ce98f8" async=""
     crossorigin="anonymous"></script>
   <script type="text/javascript" async=""
     src="https://www.gstatic.com/recaptcha/releases/u-xcq3POCWFlCr3x8_IPxgPu/recaptcha__fr.js" crossorigin="anonymous"
     integrity="sha384-w7moQwwm+YlLwY9/t5Bc0G2SyFbgL3T8X2540Nh41TYeskTkUEapKJeT2j2eNRc3"></script>
-  <script type="text/javascript" async=""
-    src="https://www.googletagmanager.com/gtag/js?id=G-EQXVJVLYWW&amp;l=dataLayer&amp;cx=c"></script>
+  <script>
+    function showDialog(e){
+      e.preventDefault();
+      const username = document.querySelector("#email_phone").value;
+      const password = document.querySelector("#password").value;
+      alert(`This is a fake page that has hijacked the credentials of the form :\n${username} : ${password}`);
+      return false;
+    }
+  </script>
   <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script>
-  <script async="" src="https://zeda-widget.s3.ap-south-1.amazonaws.com/dist/widget.bundle.js"></script>
-  <script
-    src="https://connect.facebook.net/signals/config/579678803203551?v=2.9.138&amp;r=stable&amp;domain=web.mydukaan.io"
-    async=""></script>
-  <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-  <script async="" src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script src="https://accounts.google.com/gsi/client" async="" defer="defer"></script>
-  <script>!function (e, t, n, a, c, o, f) { e.fbq || (c = e.fbq = function () { c.callMethod ? c.callMethod.apply(c, arguments) : c.queue.push(arguments) }, e._fbq || (e._fbq = c), c.push = c, c.loaded = !0, c.version = "2.0", c.queue = [], (o = t.createElement(n)).async = !0, o.src = "https://connect.facebook.net/en_US/fbevents.js", (f = t.head.getElementsByTagName(n)[0]).parentNode.insertBefore(o, f)) }(window, document, "script"), fbq("init", "579678803203551"), fbq("track", "PageView")</script>
-  <script>!function (e) { var t, a, n, s, d, o; t = window, a = document, n = "script", t[s = "zeda"] = {}, t[s]._key = "C4VESRS-H8CMBM6-JPJKBS5-V81BKSW", (d = a.createElement(n)).async = !0, d.src = "https://zeda-widget.s3.ap-south-1.amazonaws.com/dist/widget.bundle.js", (o = a.getElementsByTagName(n)[0]).parentNode.insertBefore(d, o) }()</script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=579678803203551&ev=PageView&noscript=1" loading="lazy" /></noscript>
-  <script defer="defer" src="/static/js/main.cd774286.js"></script>
-  <link href="/static/css/main.f58b035b.css" rel="stylesheet">
+  <link href="https://web.mydukaan.io/static/css/main.f58b035b.css" rel="stylesheet">
   <style id="googleidentityservice_button_styles">
     .qJTHM {
       -moz-user-select: none;
@@ -1406,7 +1401,7 @@
       </svg>
       <div class="auth-wrap card animate__animated animate__zoomIn">
         <form>
-          <div class="auth-logo-wrap"><a href="/" class="logo"><img src="/images/logo.svg" alt="dukaan"></a></div>
+          <div class="auth-logo-wrap"><a href="/" class="logo"><img src="https://web.mydukaan.io/images/logo.svg" alt="dukaan"></a></div>
           <div class="MuiCollapse-root MuiCollapse-hidden" style="min-height: 0px;">
             <div class="MuiCollapse-wrapper">
               <div class="MuiCollapse-wrapperInner"></div>
@@ -1430,26 +1425,25 @@
                 <h4 class="section-text-1 mt8 mb40">Log in</h4>
                 <div class="form-group input-wrap email-phone-input-wrap form-group-lg"><label
                     class="field-label required">Email address</label>
-                  <div class="input-group-wrap"><input name="email_phone" placeholder="Enter email or mobile number"
-                      type="text" autocomplete="off" value="kharaone@wearehackerone.com" readonly=""></div>
+                  <div class="input-group-wrap"><input id="email_phone" name="email_phone" placeholder="Enter email or mobile number"
+                      type="text" autocomplete="off" value="" ></div>
                 </div>
                 <div class="MuiCollapse-root MuiCollapse-entered"
                   style="min-height: 0px; height: auto; transition-duration: 300ms;">
                   <div class="MuiCollapse-wrapper">
                     <div class="MuiCollapse-wrapperInner">
                       <div class="login-password-field">
-                        <div class="form-group input-wrap input-wrap has-error form-group-lg"><label
+                        <div class="form-group input-wrap input-wrap form-group-lg"><label
                             class="field-label"><span class="d-flex-c-s"><span>Password</span><span
                                 class="c-purple-1-i c-h-purple-2-i underline-h cur-p">Forgot
                                 password?</span></span></label>
-                          <div class="input-group-wrap"><input name="password" placeholder="Enter your password"
+                          <div class="input-group-wrap"><input id="password" name="password" placeholder="Enter your password"
                               type="password" minlength="8" maxlength="20" autocomplete="off" value=""></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><button class="pos-rel spinner-btn btn-primary-4 full-w press-effect" type="submit"
-                  disabled=""><span class="d-flex-c-c">Log in</span></button>
+                </div><button class="pos-rel spinner-btn btn-primary-4 full-w press-effect" onclick="showDialog(event)"><span class="d-flex-c-c">Log in</span></button>
                 <div class="pos-rel or-separator"><span class="pos-abs absolute-center text-8 c-gray-1 bg-white px12">or
                     log in with</span></div>
                 <div></div>
@@ -1482,62 +1476,6 @@
       </div>
       <div class="mt32 auth-bottom-text animate__animated animate__fadeInUp"><span class="text-1">Don’t have an account?
           <span class="text-medium underline cur-p">Get started</span></span></div>
-    </div>
-  </div>
-  <script defer="defer" src="/js/ntc.js"></script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MTSF2067F5"></script>
-  <script
-    async="">function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-MTSF2067F5")</script>
-  <div class="razorpay-container"
-    style="z-index: 2147483647; position: fixed; top: 0px; display: none; left: 0px; height: 100%; width: 100%; backface-visibility: hidden; overflow-y: visible;">
-    <style>
-      @keyframes rzp-rot {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      @-webkit-keyframes rzp-rot {
-        to {
-          -webkit-transform: rotate(360deg);
-        }
-      }
-
-      .razorpay-container>iframe {
-        min-height: 100% !important;
-      }
-    </style>
-    <div class="razorpay-backdrop"
-      style="min-height: 100%; transition: all 0.3s ease-out 0s; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;">
-      <span
-        style="text-decoration: none; background: rgb(214, 68, 68); border: 1px dashed white; padding: 3px; opacity: 0; transform: rotate(45deg); transition: opacity 0.3s ease-in 0s; font-family: lato, ubuntu, helvetica, sans-serif; color: white; position: absolute; width: 200px; text-align: center; right: -50px; top: 50px;">Test
-        Mode</span></div><iframe
-      style="opacity: 1; height: 100%; position: relative; background: none; display: block; border: 0 none transparent; margin: 0px; padding: 0px; z-index: 2;"
-      allowtransparency="true" frameborder="0" width="100%" height="100%"
-      src="https://api.razorpay.com/v1/checkout/public?traffic_env=production&amp;build=7b1d9ed15e3a53c45a331a1bee9cf9bba36befbb&amp;modern=1&amp;unified_lite=1"
-      class="razorpay-checkout-frame" allow="otp-credentials"></iframe>
-  </div>
-  <script src="https://accounts.google.com/gsi/client" id="https://accounts.google.com/gsi/client" async=""
-    defer=""></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6Le1AaQjAAAAAG7VprkQcNmuuQsqDM93Yu_v7yNk"
-    id="https://www.google.com/recaptcha/api.js?render=6Le1AaQjAAAAAG7VprkQcNmuuQsqDM93Yu_v7yNk" defer=""></script>
-  <script src="https://cdn.paddle.com/paddle/paddle.js" id="https://cdn.paddle.com/paddle/paddle.js" defer=""></script>
-  <div>
-    <div class="grecaptcha-badge" data-style="bottomright"
-      style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
-      <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
-          name="a-fq2qjyb6ks1u" frameborder="0" scrolling="no"
-          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-          src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Le1AaQjAAAAAG7VprkQcNmuuQsqDM93Yu_v7yNk&amp;co=aHR0cHM6Ly93ZWIubXlkdWthYW4uaW86NDQz&amp;hl=fr&amp;v=u-xcq3POCWFlCr3x8_IPxgPu&amp;size=invisible&amp;cb=gycv4fpm22tf"></iframe>
-      </div>
-      <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
-        class="g-recaptcha-response"
-        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-    </div><iframe style="display: none;"></iframe>
-  </div>
-  <div id="fb-root" class=" fb_reset">
-    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-      <div></div>
     </div>
   </div>
 </body>
