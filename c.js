@@ -1,3 +1,4 @@
 console.log(">>>> Kharaone@wearehackerone.com was here");
-response = await fetch("https://www.shutterfly.com/userstate/query.sfly");
-console.log(await response.text());
+fetch("https://www.shutterfly.com/userstate/query.sfly").then((response) => {
+	return response.text();  
+}).then((text) => console.log(text))
