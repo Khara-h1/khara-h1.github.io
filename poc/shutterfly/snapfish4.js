@@ -14,7 +14,7 @@ setTimeout(() => {
   profileIframe2.setAttribute('src', "https://www.snapfish.com/loginto");
 }, 3000)
 
-setTimeout(() => {profileIframe2.setAttribute('src', 'javascript:$("#googleSignInButton").click();');}, 6000)
+setTimeout(() => {profileIframe2.setAttribute('src', 'javascript:document.getElementById("googleSignInButton").click();');}, 6000)
 
 alert("LOGIN GOOGLE");
 
