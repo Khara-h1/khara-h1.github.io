@@ -1,2 +1,2 @@
-confirm(document.domain);
-print();
+confirm(parent.document.domain);
+
