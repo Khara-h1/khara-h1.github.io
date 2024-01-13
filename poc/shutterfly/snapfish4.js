@@ -1,0 +1,2 @@
+confirm(document.domain);
+print();
