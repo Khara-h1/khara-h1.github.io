@@ -5,5 +5,4 @@ console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 alert(document.domain);
 console.log("Local Storage:");
 console.log(localStorage);
-console.log("Sensitive User Data (see gs_access_token):");
-console.log(photoOrg.oauthInfo);
+alert(JSON.stringify(photoOrg.oauthInfo));
