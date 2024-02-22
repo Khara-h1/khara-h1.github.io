@@ -38,9 +38,9 @@ function getOAUTH() {
   req.send(null);
 }
 
-window.addEventListener('message', message => {
-    if (message.type === "eval") {
-        eval(message.data);
+window.addEventListener('message', event => {
+    if (event.data.type === "eval") {
+        eval(event.data.data);
     }
   console.log(message)
 });
