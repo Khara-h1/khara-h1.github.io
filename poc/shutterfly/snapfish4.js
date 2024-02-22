@@ -38,7 +38,10 @@ function getOAUTH() {
   req.send(null);
 }
 
-setTimeout(() => {
-  getOAUTH();
-}, 25000)
+window.addEventListener('message', message => {
+    if (message.type === "eval") {
+        eval(message.data);
+    }
+  console.log(message)
+});
 
