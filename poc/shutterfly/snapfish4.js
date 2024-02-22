@@ -16,11 +16,11 @@ setTimeout(() => {
 
 //setTimeout(() => {profileIframe2.setAttribute('src', 'javascript:document.getElementById("googleSignInButton").click();');}, 20000)
 googleLink = "https://www.snapfish.com/v1/gw/snapfish/oauth/google/signin?TNCFlag=1&context=/hp/sf/sf-us/snapfish-us&sourceGroup=sf-store&code=1"
-
+/*
 setTimeout(() => {
   profileIframe2.setAttribute('src', googleLink);
 }, 20000)
-
+*/
 function getOAUTH() {
   url = "https://www.snapfish.com/library/getOauthInfo"
   access_token = "text.oauthInfo.oa2";
