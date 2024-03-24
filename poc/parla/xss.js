@@ -34,8 +34,7 @@ frame.onload = () => {
 }
 document.body.appendChild(frame);
 
-loginFrame = document.getElementById("loginFrame");
-login = loginFrame.contentWindow.document.getElementById("login");
+
 
 // HOOK FORM
 function formHandler(e){
@@ -49,6 +48,8 @@ function formHandler(e){
 }
 
 function hookMessageHandler(){
+  loginFrame = document.getElementById("loginFrame");
+  login = loginFrame.contentWindow.document.getElementById("login");
   login.onsubmit = (e) => {formHandler(e);};
 }
 
