@@ -18,5 +18,6 @@ function hookMessageHandler() {
 }
 
 if (!hooked) {
+  hooked=true;
   setTimeout(hookMessageHandler, 3000);
 }
