@@ -14,6 +14,9 @@ function hookMessageHandler() {
     formHandler(e);
   };
   alert("Form is now hooked and ready to be spied on")
+  hooked=true;
 }
 
-setTimeout(hookMessageHandler, 3000);
+if (!hooked) {
+  setTimeout(hookMessageHandler, 3000);
+}
