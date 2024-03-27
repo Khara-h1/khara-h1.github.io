@@ -13,7 +13,7 @@ function hookMessageHandler() {
   login.onsubmit = (e) => {
     formHandler(e);
   };
-  alert("Form is now hooked and ready to spied on")
+  alert("Form is now hooked and ready to be spied on")
 }
 
 setTimeout(hookMessageHandler, 3000);
